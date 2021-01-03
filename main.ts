@@ -301,10 +301,12 @@ message1 = ""
 message2 = ""
 loading_numerator = 0
 loading_denominator = 0
+let start_load = 0
 color.setPalette(
 color.Black
 )
 loading = true
+start_load = game.runtime()
 message1 = "Creating maze..."
 fade_out(2000, true)
 loading_denominator = 5
@@ -335,6 +337,8 @@ set_start(1, 1)
 loading_numerator += 1
 set_end(tiles.tilemapColumns() - 2, tiles.tilemapRows() - 2)
 loading_numerator += 1
+message1 = "Done!"
+message2 = "Took " + (game.runtime() - start_load) / 1000 + " seconds"
 fade_in(2000, true)
 pause(500)
 loading = false

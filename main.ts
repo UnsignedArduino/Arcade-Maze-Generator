@@ -12,21 +12,27 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         8 8 8 8 8 8 
         `)
 })
-function path_left () {
+function path_left (clear_wall: boolean) {
     current_col += -2
-    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), myTiles.tile7)) {
+    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), target_tile)) {
         tiles.setTileAt(tiles.getTileLocation(current_col + 1, current_row), myTiles.tile6)
-        tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
-        loading_numerator += 1
+        if (clear_wall) {
+            tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
+        }
+        return true
     }
+    return false
 }
-function path_down () {
+function path_down (clear_wall: boolean) {
     current_row += 2
-    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), myTiles.tile7)) {
+    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), target_tile)) {
         tiles.setTileAt(tiles.getTileLocation(current_col, current_row - 1), myTiles.tile6)
-        tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
-        loading_numerator += 1
+        if (clear_wall) {
+            tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
+        }
+        return true
     }
+    return false
 }
 function init_maze (difficulty: number) {
     if (difficulty == 1) {
@@ -181,19 +187,37 @@ info.onCountdownEnd(function () {
         game.over(false, effects.melt)
     })
 })
+function make_random_path (clear_wall: boolean) {
+    if (Math.percentChance(50)) {
+        if ((Math.percentChance(50) || !(rows_in_tilemap(current_row + 2))) && rows_in_tilemap(current_row - 2)) {
+            return path_up(clear_wall)
+        } else {
+            return path_down(clear_wall)
+        }
+    } else {
+        if ((Math.percentChance(50) || !(col_in_tilemap(current_col + 2))) && col_in_tilemap(current_col - 2)) {
+            return path_left(clear_wall)
+        } else {
+            return path_right(clear_wall)
+        }
+    }
+}
 function fade_in (delay: number, block: boolean) {
     color.startFade(color.originalPalette, color.Black, delay)
     if (block) {
         color.pauseUntilFadeDone()
     }
 }
-function path_up () {
+function path_up (clear_wall: boolean) {
     current_row += -2
-    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), myTiles.tile7)) {
-        tiles.setTileAt(tiles.getTileLocation(current_col, current_row + 1), myTiles.tile6)
+    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), target_tile)) {
+        if (clear_wall) {
+            tiles.setTileAt(tiles.getTileLocation(current_col, current_row + 1), myTiles.tile6)
+        }
         tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
-        loading_numerator += 1
+        return true
     }
+    return false
 }
 function divide_maze () {
     for (let row = 0; row <= tiles.tilemapRows() - 1; row++) {
@@ -220,21 +244,25 @@ function make_maze (start_col: number, start_row: number) {
         `, SpriteKind.Player)
     current_col = start_col
     current_row = start_row
+    target_tile = myTiles.tile7
+    unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
+    loading_denominator += unvisited_tiles
     tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
     // https://en.wikipedia.org/wiki/Maze_generation_algorithm#Aldous-Broder_algorithm
     while (tiles.getTilesByType(myTiles.tile7).length > 0) {
-        if (Math.percentChance(50)) {
-            if ((Math.percentChance(50) || !(rows_in_tilemap(current_row + 2))) && rows_in_tilemap(current_row - 2)) {
-                path_up()
-            } else {
-                path_down()
+        if (Math.percentChance(5)) {
+            new_spot()
+            target_tile = myTiles.tile6
+            while (!(make_random_path(false))) {
+                pause(0)
             }
         } else {
-            if ((Math.percentChance(50) || !(col_in_tilemap(current_col + 2))) && col_in_tilemap(current_col - 2)) {
-                path_left()
-            } else {
-                path_right()
-            }
+            target_tile = myTiles.tile7
+            make_random_path(true)
+        }
+        if (unvisited_tiles != tiles.getTilesByType(myTiles.tile7).length) {
+            loading_numerator += unvisited_tiles - tiles.getTilesByType(myTiles.tile7).length
+            unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
         }
         tiles.placeOnTile(sprite_cursor, tiles.getTileLocation(current_col, current_row))
         message2 = "" + tiles.getTilesByType(myTiles.tile7).length + " cell(s) left"
@@ -242,13 +270,16 @@ function make_maze (start_col: number, start_row: number) {
     }
     sprite_cursor.destroy()
 }
-function path_right () {
+function path_right (clear_wall: boolean) {
     current_col += 2
-    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), myTiles.tile7)) {
+    if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), target_tile)) {
         tiles.setTileAt(tiles.getTileLocation(current_col - 1, current_row), myTiles.tile6)
-        tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
-        loading_numerator += 1
+        if (clear_wall) {
+            tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
+        }
+        return true
     }
+    return false
 }
 controller.B.onEvent(ControllerButtonEvent.Released, function () {
     controller.moveSprite(sprite_player, 100, 100)
@@ -266,7 +297,7 @@ function rows_in_tilemap (row: number) {
 }
 spriteutils.createRenderable(100, function (screen2) {
     if (loading) {
-        length = Math.round(Math.map(Math.constrain(loading_numerator / loading_denominator, 0, 1), 0, 1, 0, scene.screenWidth() * 0.6 - 3))
+        length = Math.round(Math.map(Math.constrain(loading_numerator / loading_denominator, 0, 1), 0, 1, 0, scene.screenWidth() * 0.6 - 4))
         screen2.fill(15)
         screen2.drawRect(scene.screenWidth() * 0.2, scene.screenHeight() * 0.47, scene.screenWidth() * 0.6, scene.screenHeight() * 0.06, 1)
         screen2.fillRect(scene.screenWidth() * 0.2 + 2, scene.screenHeight() * 0.47 + 2, length, scene.screenHeight() * 0.06 - 4, 1)
@@ -307,7 +338,9 @@ function is_even (num: number) {
 }
 let minimap2: minimap.Minimap = null
 let length = 0
+let unvisited_tiles = 0
 let sprite_cursor: Sprite = null
+let target_tile: Image = null
 let current_row = 0
 let current_col = 0
 let sprite_player: Sprite = null
@@ -346,7 +379,6 @@ clear_maze()
 loading_numerator += 1
 divide_maze()
 loading_numerator += 1
-loading_denominator += tiles.getTilesByType(myTiles.tile7).length
 make_maze(1, 1)
 if (!(debug)) {
     loading_numerator += 1
@@ -380,10 +412,12 @@ while (!(_break)) {
     }
     pause(50)
 }
-if (user_difficulty == 1) {
-    info.startCountdown(0.5 * 60)
-} else if (user_difficulty == 2) {
-    info.startCountdown(1 * 60)
-} else {
-    info.startCountdown(2.5 * 60)
+if (!(debug)) {
+    if (user_difficulty == 1) {
+        info.startCountdown(0.5 * 60)
+    } else if (user_difficulty == 2) {
+        info.startCountdown(1 * 60)
+    } else {
+        info.startCountdown(2.5 * 60)
+    }
 }

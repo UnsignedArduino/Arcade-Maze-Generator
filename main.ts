@@ -153,9 +153,21 @@ function clear_maze () {
         }
     }
 }
+function fade_out (delay: number, block: boolean) {
+    color.startFade(color.Black, color.originalPalette, delay)
+    if (block) {
+        color.pauseUntilFadeDone()
+    }
+}
 function set_end (col: number, row: number) {
     tiles.setTileAt(tiles.getTileLocation(col, row), myTiles.tile8)
     tiles.setWallAt(tiles.getTileLocation(col, row), false)
+}
+function fade_in (delay: number, block: boolean) {
+    color.startFade(color.originalPalette, color.Black, delay)
+    if (block) {
+        color.pauseUntilFadeDone()
+    }
 }
 function path_up () {
     current_row += -2
@@ -225,7 +237,7 @@ function rows_in_tilemap (row: number) {
 }
 spriteutils.createRenderable(100, function (screen2) {
     if (loading) {
-        length = Math.round(Math.map(Math.constrain(loading_numerator / loading_denominator, 0, 1), 0, 1, 0, scene.screenWidth() * 0.6 - 4))
+        length = Math.round(Math.map(Math.constrain(loading_numerator / loading_denominator, 0, 1), 0, 1, 0, scene.screenWidth() * 0.6 - 3))
         screen2.fill(15)
         screen2.drawRect(scene.screenWidth() * 0.2, scene.screenHeight() * 0.47, scene.screenWidth() * 0.6, scene.screenHeight() * 0.06, 1)
         screen2.fillRect(scene.screenWidth() * 0.2 + 2, scene.screenHeight() * 0.47 + 2, length, scene.screenHeight() * 0.06 - 4, 1)
@@ -288,9 +300,14 @@ loading = false
 message1 = ""
 message2 = ""
 loading_numerator = 0
-loading_denominator = 5
+loading_denominator = 0
+color.setPalette(
+color.Black
+)
 loading = true
 message1 = "Creating maze..."
+fade_out(2000, true)
+loading_denominator = 5
 init_maze(difficulty)
 loading_numerator += 1
 clear_maze()
@@ -300,10 +317,10 @@ loading_numerator += 1
 loading_denominator += tiles.getTilesByType(myTiles.tile7).length
 make_maze(1, 1)
 if (!(debug)) {
+    loading_numerator += 1
     loading_denominator += 1
     make_walls()
 }
-loading = false
 sprite_player = sprites.create(img`
     9 9 9 9 9 9 
     9 9 9 9 9 9 
@@ -318,3 +335,8 @@ set_start(1, 1)
 loading_numerator += 1
 set_end(tiles.tilemapColumns() - 2, tiles.tilemapRows() - 2)
 loading_numerator += 1
+fade_in(2000, true)
+pause(500)
+loading = false
+pause(500)
+fade_out(2000, true)

@@ -1,6 +1,17 @@
 function col_in_tilemap (col: number) {
     return col >= 0 && col < tiles.tilemapColumns()
 }
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    controller.moveSprite(sprite_player, 50, 50)
+    sprite_player.setImage(img`
+        8 8 8 8 8 8 
+        8 8 8 8 8 8 
+        8 8 8 8 8 8 
+        8 8 8 8 8 8 
+        8 8 8 8 8 8 
+        8 8 8 8 8 8 
+        `)
+})
 function path_left () {
     current_col += -2
     if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), myTiles.tile7)) {
@@ -239,6 +250,17 @@ function path_right () {
         loading_numerator += 1
     }
 }
+controller.B.onEvent(ControllerButtonEvent.Released, function () {
+    controller.moveSprite(sprite_player, 100, 100)
+    sprite_player.setImage(img`
+        9 9 9 9 9 9 
+        9 9 9 9 9 9 
+        9 9 9 9 9 9 
+        9 9 9 9 9 9 
+        9 9 9 9 9 9 
+        9 9 9 9 9 9 
+        `)
+})
 function rows_in_tilemap (row: number) {
     return row >= 0 && row < tiles.tilemapRows()
 }
@@ -252,9 +274,9 @@ spriteutils.createRenderable(100, function (screen2) {
         images.printCenter(screen2, message2, scene.screenHeight() * 0.53 + 4, 1)
     }
     if (debug) {
-        if (difficulty == 1) {
+        if (user_difficulty == 1) {
             minimap2 = minimap.minimap(MinimapScale.Half, 0, 12)
-        } else if (difficulty == 2) {
+        } else if (user_difficulty == 2) {
             minimap2 = minimap.minimap(MinimapScale.Quarter, 0, 12)
         } else {
             minimap2 = minimap.minimap(MinimapScale.Eighth, 0, 12)
@@ -295,13 +317,13 @@ let message2 = ""
 let message1 = ""
 let loading = false
 let won = false
-let difficulty = 0
+let user_difficulty = 0
 let debug = false
 debug = false
 // 1: Easy
 // 2: Medium
 // 3: Hard
-difficulty = 1
+user_difficulty = 1
 won = false
 loading = false
 message1 = ""
@@ -318,7 +340,7 @@ start_load = game.runtime()
 message1 = "Creating maze..."
 fade_out(2000, true)
 loading_denominator = 5
-init_maze(difficulty)
+init_maze(user_difficulty)
 loading_numerator += 1
 clear_maze()
 loading_numerator += 1
@@ -358,9 +380,9 @@ while (!(_break)) {
     }
     pause(50)
 }
-if (difficulty == 1) {
+if (user_difficulty == 1) {
     info.startCountdown(0.5 * 60)
-} else if (difficulty == 2) {
+} else if (user_difficulty == 2) {
     info.startCountdown(1 * 60)
 } else {
     info.startCountdown(2.5 * 60)

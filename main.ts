@@ -4,7 +4,7 @@ function col_in_tilemap (col: number) {
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
     timer.throttle("win", 500, function () {
         tiles.placeOnTile(sprite, location)
-        timer.after(100, function () {
+        timer.after(20, function () {
             game.over(true)
         })
     })
@@ -171,7 +171,7 @@ function divide_maze () {
         }
     }
 }
-function make_maze (start_col: number, start_row: number, delay: number) {
+function make_maze (start_col: number, start_row: number) {
     sprite_cursor = sprites.create(img`
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
@@ -209,7 +209,7 @@ function make_maze (start_col: number, start_row: number, delay: number) {
             }
         }
         tiles.placeOnTile(sprite_cursor, tiles.getTileLocation(current_col, current_row))
-        pause(delay)
+        pause(0)
     }
     sprite_cursor.destroy()
 }
@@ -264,11 +264,11 @@ let debug = false
 // 1: Easy
 // 2: Medium
 // 3: Hard
-difficulty = 3
+difficulty = 1
 init_maze(difficulty)
 clear_maze()
 divide_maze()
-make_maze(1, 1, 0)
+make_maze(1, 1)
 if (!(debug)) {
     make_walls()
 }
@@ -288,5 +288,5 @@ sprite_player = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(sprite_player, 200, 200)
 scene.cameraFollowSprite(sprite_player)
-set_start(1, 0)
+set_start(1, 1)
 set_end(tiles.tilemapColumns() - 1, tiles.tilemapRows() - 1)

@@ -163,6 +163,13 @@ function set_end (col: number, row: number) {
     tiles.setTileAt(tiles.getTileLocation(col, row), myTiles.tile8)
     tiles.setWallAt(tiles.getTileLocation(col, row), false)
 }
+info.onCountdownEnd(function () {
+    controller.moveSprite(sprite_player, 0, 0)
+    sprite_player.destroy(effects.disintegrate, 200)
+    timer.after(2000, function () {
+        game.over(false, effects.melt)
+    })
+})
 function fade_in (delay: number, block: boolean) {
     color.startFade(color.originalPalette, color.Black, delay)
     if (block) {
@@ -302,6 +309,7 @@ message2 = ""
 loading_numerator = 0
 loading_denominator = 0
 let start_load = 0
+let _break = false
 color.setPalette(
 color.Black
 )
@@ -343,4 +351,17 @@ fade_in(2000, true)
 pause(500)
 loading = false
 pause(500)
-fade_out(2000, true)
+fade_out(2000, false)
+while (!(_break)) {
+    if (controller.up.isPressed() || controller.down.isPressed() || (controller.left.isPressed() || controller.right.isPressed())) {
+        _break = true
+    }
+    pause(50)
+}
+if (difficulty == 1) {
+    info.startCountdown(0.5 * 60)
+} else if (difficulty == 2) {
+    info.startCountdown(1 * 60)
+} else {
+    info.startCountdown(2.5 * 60)
+}

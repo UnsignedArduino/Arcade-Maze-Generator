@@ -2,15 +2,17 @@ function col_in_tilemap (col: number) {
     return col >= 0 && col < tiles.tilemapColumns()
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    controller.moveSprite(sprite_player, 50, 50)
-    sprite_player.setImage(img`
-        8 8 8 8 8 8 
-        8 8 8 8 8 8 
-        8 8 8 8 8 8 
-        8 8 8 8 8 8 
-        8 8 8 8 8 8 
-        8 8 8 8 8 8 
-        `)
+    if (sprite_player) {
+        controller.moveSprite(sprite_player, 40, 40)
+        sprite_player.setImage(img`
+            8 8 8 8 8 8 
+            8 8 8 8 8 8 
+            8 8 8 8 8 8 
+            8 8 8 8 8 8 
+            8 8 8 8 8 8 
+            8 8 8 8 8 8 
+            `)
+    }
 })
 function path_left (clear_wall: boolean) {
     current_col += -2
@@ -245,27 +247,32 @@ function make_maze (start_col: number, start_row: number) {
     current_col = start_col
     current_row = start_row
     target_tile = myTiles.tile7
-    unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
-    loading_denominator += unvisited_tiles
+    total_unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
+    loading_denominator += total_unvisited_tiles
     tiles.setTileAt(tiles.getTileLocation(current_col, current_row), myTiles.tile6)
     // https://en.wikipedia.org/wiki/Maze_generation_algorithm#Aldous-Broder_algorithm
     while (tiles.getTilesByType(myTiles.tile7).length > 0) {
+        start_step_time = game.runtime()
         if (Math.percentChance(5)) {
             new_spot()
             target_tile = myTiles.tile6
             while (!(make_random_path(false))) {
+                tiles.placeOnTile(sprite_cursor, tiles.getTileLocation(current_col, current_row))
                 pause(0)
             }
         } else {
             target_tile = myTiles.tile7
             make_random_path(true)
         }
-        if (unvisited_tiles != tiles.getTilesByType(myTiles.tile7).length) {
-            loading_numerator += unvisited_tiles - tiles.getTilesByType(myTiles.tile7).length
-            unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
+        if (total_unvisited_tiles != tiles.getTilesByType(myTiles.tile7).length) {
+            loading_numerator += total_unvisited_tiles - tiles.getTilesByType(myTiles.tile7).length
+            total_unvisited_tiles = tiles.getTilesByType(myTiles.tile7).length
         }
         tiles.placeOnTile(sprite_cursor, tiles.getTileLocation(current_col, current_row))
-        message2 = "" + tiles.getTilesByType(myTiles.tile7).length + " cell(s) left"
+        eta = (game.runtime() - start_step_time) * tiles.getTilesByType(myTiles.tile7).length / 1000
+        if (eta != 0) {
+            message2 = "ETA: " + format_seconds(Math.round(eta))
+        }
         pause(0)
     }
     sprite_cursor.destroy()
@@ -282,15 +289,17 @@ function path_right (clear_wall: boolean) {
     return false
 }
 controller.B.onEvent(ControllerButtonEvent.Released, function () {
-    controller.moveSprite(sprite_player, 100, 100)
-    sprite_player.setImage(img`
-        9 9 9 9 9 9 
-        9 9 9 9 9 9 
-        9 9 9 9 9 9 
-        9 9 9 9 9 9 
-        9 9 9 9 9 9 
-        9 9 9 9 9 9 
-        `)
+    if (sprite_player) {
+        controller.moveSprite(sprite_player, 80, 80)
+        sprite_player.setImage(img`
+            9 9 9 9 9 9 
+            9 9 9 9 9 9 
+            9 9 9 9 9 9 
+            9 9 9 9 9 9 
+            9 9 9 9 9 9 
+            9 9 9 9 9 9 
+            `)
+    }
 })
 function rows_in_tilemap (row: number) {
     return row >= 0 && row < tiles.tilemapRows()
@@ -324,6 +333,21 @@ spriteutils.createRenderable(100, function (screen2) {
 function set_start (col: number, row: number) {
     tiles.placeOnTile(sprite_player, tiles.getTileLocation(col, row))
 }
+function format_seconds (seconds: number) {
+    mins = Math.idiv(seconds, 60)
+    secs = seconds - Math.idiv(seconds, 60) * 60
+    if (mins < 10) {
+        mins_str = "0" + mins
+    } else {
+        mins_str = "" + mins
+    }
+    if (secs < 10) {
+        secs_str = "0" + secs
+    } else {
+        secs_str = "" + secs
+    }
+    return "" + mins_str + ":" + secs_str
+}
 function make_walls () {
     for (let loc of tiles.getTilesByType(myTiles.tile5)) {
         tiles.setWallAt(loc, true)
@@ -336,9 +360,15 @@ function new_spot () {
 function is_even (num: number) {
     return Math.idiv(num, 2) == num / 2
 }
+let secs_str = ""
+let mins_str = ""
+let secs = 0
+let mins = 0
 let minimap2: minimap.Minimap = null
 let length = 0
-let unvisited_tiles = 0
+let eta = 0
+let start_step_time = 0
+let total_unvisited_tiles = 0
 let sprite_cursor: Sprite = null
 let target_tile: Image = null
 let current_row = 0
@@ -393,7 +423,7 @@ sprite_player = sprites.create(img`
     9 9 9 9 9 9 
     9 9 9 9 9 9 
     `, SpriteKind.Player)
-controller.moveSprite(sprite_player, 100, 100)
+controller.moveSprite(sprite_player, 80, 80)
 scene.cameraFollowSprite(sprite_player)
 set_start(1, 1)
 loading_numerator += 1

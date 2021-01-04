@@ -732,9 +732,8 @@ loading_numerator += 1
 message1 = "Done!"
 message2 = "Took " + (game.runtime() - start_load) / 1000 + " seconds"
 fade_in(2000, true)
-pause(500)
 loading = false
-pause(500)
+pause(1000)
 fade_out(2000, false)
 _break = false
 while (!(_break)) {

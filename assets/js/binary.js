@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.2.16/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.1.1","target":"arcade","targetVersion":"1.2.16","repo":"unsignedarduino/arcade-maze-generator"}
-// total=1930731 new=11.79% cached=83.52% other=4.70%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.2.16/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.1.2","target":"arcade","targetVersion":"1.2.16","repo":"unsignedarduino/arcade-maze-generator"}
+// total=1930603 new=11.78% cached=83.52% other=4.70%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -526,7 +526,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P151398(s) {
+function _main___P155484(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -981,79 +981,79 @@ switch (step) {
     s.tmp_0 = controller_Button_onEvent__P28077_mk(s);
     s.tmp_0.arg0 = globals.B___28045;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P150364;
+    s.tmp_0.arg2 = inline__P154241;
     s.callLocIdx = 80; s.pc = 72; return s.tmp_0;
   case 72:
     r0 = s.retval;
     s.tmp_0 = scene_onOverlapTile__P28275_mk(s);
     s.tmp_0.arg0 = globals.Player___28295;
     s.tmp_0.arg1 = globals.tile8___30047;
-    s.tmp_0.arg2 = inline__P150464;
+    s.tmp_0.arg2 = inline__P154341;
     s.callLocIdx = 102; s.pc = 73; return s.tmp_0;
   case 73:
     r0 = s.retval;
     s.tmp_0 = info_onCountdownEnd__P28382_mk(s);
-    s.tmp_0.arg0 = inline__P150526;
+    s.tmp_0.arg0 = inline__P154403;
     s.callLocIdx = 119; s.pc = 74; return s.tmp_0;
   case 74:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P28077_mk(s);
     s.tmp_0.arg0 = globals.B___28045;
     s.tmp_0.arg1 = 2048;
-    s.tmp_0.arg2 = inline__P150805;
+    s.tmp_0.arg2 = inline__P154682;
     s.callLocIdx = 182; s.pc = 75; return s.tmp_0;
   case 75:
     r0 = s.retval;
     s.tmp_0 = spriteutils_createRenderable__P29793_mk(s);
     s.tmp_0.arg0 = 100;
-    s.tmp_0.arg1 = inline__P150829;
+    s.tmp_0.arg1 = inline__P154706;
     s.callLocIdx = 208; s.pc = 76; return s.tmp_0;
   case 76:
     r0 = s.retval;
     s.tmp_0 = blockMenu_onMenuOptionSelected__P29824_mk(s);
-    s.tmp_0.arg0 = inline__P151023;
+    s.tmp_0.arg0 = inline__P154900;
     s.callLocIdx = 217; s.pc = 77; return s.tmp_0;
   case 77:
     r0 = s.retval;
     r0 = pxsim_String_.mkEmpty();
-    globals.secs_str___150977 = (r0);
+    globals.secs_str___154854 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.mins_str___150962 = (r0);
-    globals.secs___150951 = (0);
-    globals.mins___150945 = (0);
-    globals.minimap2___150904 = (null);
-    globals.length___150835 = (0);
-    globals.eta___150749 = (0);
-    globals.start_step_time___150703 = (0);
-    globals.total_unvisited_tiles___150681 = (0);
-    globals.sprite_cursor___150668 = (null);
-    globals.selected_menu___150592 = (false);
-    globals.target_tile___150390 = (null);
-    globals.current_row___150387 = (0);
-    globals.current_col___150378 = (0);
-    globals.sprite_player___150366 = (null);
-    globals.loading_denominator___150688 = (0);
-    globals.loading_numerator___150731 = (0);
+    globals.mins_str___154839 = (r0);
+    globals.secs___154828 = (0);
+    globals.mins___154822 = (0);
+    globals.minimap2___154781 = (null);
+    globals.length___154712 = (0);
+    globals.eta___154626 = (0);
+    globals.start_step_time___154580 = (0);
+    globals.total_unvisited_tiles___154558 = (0);
+    globals.sprite_cursor___154545 = (null);
+    globals.selected_menu___154469 = (false);
+    globals.target_tile___154267 = (null);
+    globals.current_row___154264 = (0);
+    globals.current_col___154255 = (0);
+    globals.sprite_player___154243 = (null);
+    globals.loading_denominator___154565 = (0);
+    globals.loading_numerator___154608 = (0);
     r0 = pxsim_String_.mkEmpty();
-    globals.message2___150764 = (r0);
+    globals.message2___154641 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.message1___150885 = (r0);
-    globals.loading___150832 = (false);
-    globals.won___150470 = (false);
-    globals.user_difficulty___150824 = (0);
-    globals.debug___150899 = (false);
-    globals.debug___150899 = (false);
-    globals.user_difficulty___150824 = (1);
-    globals.won___150470 = (false);
-    globals.loading___150832 = (false);
+    globals.message1___154762 = (r0);
+    globals.loading___154709 = (false);
+    globals.won___154347 = (false);
+    globals.user_difficulty___154701 = (0);
+    globals.debug___154776 = (false);
+    globals.debug___154776 = (false);
+    globals.user_difficulty___154701 = (1);
+    globals.won___154347 = (false);
+    globals.loading___154709 = (false);
     r0 = pxsim_String_.mkEmpty();
-    globals.message1___150885 = (r0);
+    globals.message1___154762 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.message2___150764 = (r0);
-    globals.loading_numerator___150731 = (0);
-    globals.loading_denominator___150688 = (0);
-    globals.start_load___151043 = (0);
-    globals._break___151045 = (false);
+    globals.message2___154641 = (r0);
+    globals.loading_numerator___154608 = (0);
+    globals.loading_denominator___154565 = (0);
+    globals.start_load___154920 = (0);
+    globals._break___154922 = (false);
     s.tmp_0 = color_setPalette__P29702_mk(s);
     s.tmp_0.arg0 = globals.Black___29752;
     s.tmp_0.arg1 = 0;
@@ -1063,12 +1063,12 @@ switch (step) {
   case 78:
     r0 = s.retval;
     s.tmp_0 = scene_setBackgroundImage__P28626_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex151050);
+    r0 = pxsim.image.ofBuffer(_hex154927);
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 219; s.pc = 79; return s.tmp_0;
   case 79:
     r0 = s.retval;
-    s.tmp_0 = fade_out__P150504_mk(s);
+    s.tmp_0 = fade_out__P154381_mk(s);
     s.tmp_0.arg0 = 2000;
     s.tmp_0.arg1 = false;
     s.callLocIdx = 220; s.pc = 80; return s.tmp_0;
@@ -1081,12 +1081,12 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = timer_after__P29761_mk(s);
     s.tmp_0.arg0 = 2000;
-    s.tmp_0.arg1 = inline__P151054;
+    s.tmp_0.arg1 = inline__P154931;
     s.callLocIdx = 223; s.pc = 82; return s.tmp_0;
   case 82:
     r0 = s.retval;
   case 1:
-    r0 = pxsim_numops_toBoolDecr(globals._break___151045);
+    r0 = pxsim_numops_toBoolDecr(globals._break___154922);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -1109,7 +1109,7 @@ switch (step) {
     s.callLocIdx = 225; s.pc = 84; return s.tmp_1;
   case 84:
     r0 = s.retval;
-    s.tmp_0 = wait_for_menu_select__P150589_mk(s);
+    s.tmp_0 = wait_for_menu_select__P154466_mk(s);
     s.tmp_0.arg0 = false;
     s.callLocIdx = 226; s.pc = 85; return s.tmp_0;
   case 85:
@@ -1135,8 +1135,8 @@ switch (step) {
   case 88:
     r0 = s.retval;
     s.tmp_4 = r0;
-    s.tmp_8 = get_difficulty_name_from_number__P150820_mk(s);
-    s.tmp_8.arg0 = globals.user_difficulty___150824;
+    s.tmp_8 = get_difficulty_name_from_number__P154697_mk(s);
+    s.tmp_8.arg0 = globals.user_difficulty___154701;
     s.callLocIdx = 228; s.pc = 89; return s.tmp_8;
   case 89:
     r0 = s.retval;
@@ -1165,7 +1165,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    globals._break___151045 = (true);
+    globals._break___154922 = (true);
   case 2:
   case 3:
     { step = 9; continue; }
@@ -1196,7 +1196,7 @@ switch (step) {
     s.callLocIdx = 233; s.pc = 94; return s.tmp_1;
   case 94:
     r0 = s.retval;
-    s.tmp_0 = wait_for_menu_select__P150589_mk(s);
+    s.tmp_0 = wait_for_menu_select__P154466_mk(s);
     s.tmp_0.arg0 = true;
     s.callLocIdx = 234; s.pc = 95; return s.tmp_0;
   case 95:
@@ -1222,10 +1222,10 @@ switch (step) {
     s.callLocIdx = 237; s.pc = 98; return s.tmp_0;
   case 98:
     r0 = s.retval;
-    globals.user_difficulty___150824 = (r0);
+    globals.user_difficulty___154701 = (r0);
     s.tmp_0 = game_showLongText__P28688_mk(s);
-    s.tmp_5 = get_difficulty_name_from_number__P150820_mk(s);
-    s.tmp_5.arg0 = globals.user_difficulty___150824;
+    s.tmp_5 = get_difficulty_name_from_number__P154697_mk(s);
+    s.tmp_5.arg0 = globals.user_difficulty___154701;
     s.callLocIdx = 238; s.pc = 100; return s.tmp_5;
   case 100:
     r0 = s.retval;
@@ -1266,7 +1266,7 @@ switch (step) {
   case 9:
     { step = 1; continue; }
   case 10:
-    s.tmp_0 = fade_in__P150580_mk(s);
+    s.tmp_0 = fade_in__P154457_mk(s);
     s.tmp_0.arg0 = 2000;
     s.tmp_0.arg1 = true;
     s.callLocIdx = 241; s.pc = 104; return s.tmp_0;
@@ -1277,95 +1277,95 @@ switch (step) {
   case 105:
     r0 = s.retval;
     s.tmp_0 = scene_setBackgroundImage__P28626_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex151118);
+    r0 = pxsim.image.ofBuffer(_hex154995);
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 243; s.pc = 106; return s.tmp_0;
   case 106:
     r0 = s.retval;
-    globals.loading___150832 = (true);
+    globals.loading___154709 = (true);
     s.tmp_0 = game_runtime__P28715_mk(s);
     s.callLocIdx = 244; s.pc = 107; return s.tmp_0;
   case 107:
     r0 = s.retval;
-    globals.start_load___151043 = (r0);
-    globals.message1___150885 = ("Creating maze...");
-    s.tmp_0 = fade_out__P150504_mk(s);
+    globals.start_load___154920 = (r0);
+    globals.message1___154762 = ("Creating maze...");
+    s.tmp_0 = fade_out__P154381_mk(s);
     s.tmp_0.arg0 = 2000;
     s.tmp_0.arg1 = true;
     s.callLocIdx = 245; s.pc = 108; return s.tmp_0;
   case 108:
     r0 = s.retval;
-    globals.loading_denominator___150688 = (5);
-    s.tmp_0 = init_maze__P150428_mk(s);
-    s.tmp_0.arg0 = globals.user_difficulty___150824;
+    globals.loading_denominator___154565 = (5);
+    s.tmp_0 = init_maze__P154305_mk(s);
+    s.tmp_0.arg0 = globals.user_difficulty___154701;
     s.callLocIdx = 246; s.pc = 109; return s.tmp_0;
   case 109:
     r0 = s.retval;
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    s.tmp_0 = clear_maze__P150480_mk(s);
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    s.tmp_0 = clear_maze__P154357_mk(s);
     s.callLocIdx = 247; s.pc = 110; return s.tmp_0;
   case 110:
     r0 = s.retval;
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    s.tmp_0 = divide_maze__P150630_mk(s);
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    s.tmp_0 = divide_maze__P154507_mk(s);
     s.callLocIdx = 248; s.pc = 111; return s.tmp_0;
   case 111:
     r0 = s.retval;
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    s.tmp_0 = make_maze__P150664_mk(s);
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    s.tmp_0 = make_maze__P154541_mk(s);
     s.tmp_0.arg0 = 1;
     s.tmp_0.arg1 = 1;
     s.callLocIdx = 249; s.pc = 112; return s.tmp_0;
   case 112:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(globals.debug___150899);
+    r0 = pxsim_numops_toBoolDecr(globals.debug___154776);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    r0 = (globals.loading_denominator___150688 + 1);
-    globals.loading_denominator___150688 = (r0);
-    s.tmp_0 = make_walls__P151002_mk(s);
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    r0 = (globals.loading_denominator___154565 + 1);
+    globals.loading_denominator___154565 = (r0);
+    s.tmp_0 = make_walls__P154879_mk(s);
     s.callLocIdx = 250; s.pc = 113; return s.tmp_0;
   case 113:
     r0 = s.retval;
   case 11:
   case 12:
     s.tmp_0 = sprites_create__P28141_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex151157);
+    r0 = pxsim.image.ofBuffer(_hex155034);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___28295;
     s.callLocIdx = 251; s.pc = 114; return s.tmp_0;
   case 114:
     r0 = s.retval;
-    globals.sprite_player___150366 = (r0);
+    globals.sprite_player___154243 = (r0);
     s.tmp_0 = controller_moveSprite__P28119_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_0.arg1 = 80;
     s.tmp_0.arg2 = 80;
     s.callLocIdx = 252; s.pc = 115; return s.tmp_0;
   case 115:
     r0 = s.retval;
     s.tmp_0 = scene_cameraFollowSprite__P28631_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.callLocIdx = 253; s.pc = 116; return s.tmp_0;
   case 116:
     r0 = s.retval;
-    s.tmp_0 = set_start__P150935_mk(s);
+    s.tmp_0 = set_start__P154812_mk(s);
     s.tmp_0.arg0 = 1;
     s.tmp_0.arg1 = 1;
     s.callLocIdx = 254; s.pc = 117; return s.tmp_0;
   case 117:
     r0 = s.retval;
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    s.tmp_0 = set_end__P150513_mk(s);
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    s.tmp_0 = set_end__P154390_mk(s);
     s.tmp_2 = tiles_tilemapColumns__P29898_mk(s);
     s.callLocIdx = 255; s.pc = 119; return s.tmp_2;
   case 119:
@@ -1383,15 +1383,15 @@ switch (step) {
     s.callLocIdx = 257; s.pc = 118; return s.tmp_0;
   case 118:
     r0 = s.retval;
-    r0 = (globals.loading_numerator___150731 + 1);
-    globals.loading_numerator___150731 = (r0);
-    globals.message1___150885 = ("Done!");
+    r0 = (globals.loading_numerator___154608 + 1);
+    globals.loading_numerator___154608 = (r0);
+    globals.message1___154762 = ("Done!");
     s.tmp_6 = game_runtime__P28715_mk(s);
     s.callLocIdx = 258; s.pc = 121; return s.tmp_6;
   case 121:
     r0 = s.retval;
     s.tmp_5 = r0;
-    r0 = (s.tmp_5 - globals.start_load___151043);
+    r0 = (s.tmp_5 - globals.start_load___154920);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 / 1000);
     s.tmp_3 = r0;
@@ -1416,33 +1416,28 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, " seconds");
-    globals.message2___150764 = (r0);
-    s.tmp_0 = fade_in__P150580_mk(s);
+    globals.message2___154641 = (r0);
+    s.tmp_0 = fade_in__P154457_mk(s);
     s.tmp_0.arg0 = 2000;
     s.tmp_0.arg1 = true;
     s.callLocIdx = 259; s.pc = 124; return s.tmp_0;
   case 124:
     r0 = s.retval;
+    globals.loading___154709 = (false);
     s.tmp_0 = pause__P26569_mk(s);
-    s.tmp_0.arg0 = 500;
+    s.tmp_0.arg0 = 1000;
     s.callLocIdx = 260; s.pc = 125; return s.tmp_0;
   case 125:
     r0 = s.retval;
-    globals.loading___150832 = (false);
-    s.tmp_0 = pause__P26569_mk(s);
-    s.tmp_0.arg0 = 500;
+    s.tmp_0 = fade_out__P154381_mk(s);
+    s.tmp_0.arg0 = 2000;
+    s.tmp_0.arg1 = false;
     s.callLocIdx = 261; s.pc = 126; return s.tmp_0;
   case 126:
     r0 = s.retval;
-    s.tmp_0 = fade_out__P150504_mk(s);
-    s.tmp_0.arg0 = 2000;
-    s.tmp_0.arg1 = false;
-    s.callLocIdx = 262; s.pc = 127; return s.tmp_0;
-  case 127:
-    r0 = s.retval;
-    globals._break___151045 = (false);
+    globals._break___154922 = (false);
   case 13:
-    r0 = pxsim_numops_toBoolDecr(globals._break___151045);
+    r0 = pxsim_numops_toBoolDecr(globals._break___154922);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -1452,8 +1447,8 @@ switch (step) {
     s.tmp_3.arg0 = globals.up___28047;
     if (!checkSubtype(s.tmp_3.arg0, controller_Button__C28070_VT)) failedCast(s.tmp_3.arg0);
     s.tmp_3.fn = s.tmp_3.arg0.vtable.methods.isPressed;
-    s.pc = 128; return s.tmp_3;
-  case 128:
+    s.pc = 127; return s.tmp_3;
+  case 127:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBool(s.tmp_2);
@@ -1465,8 +1460,8 @@ switch (step) {
     s.tmp_4.arg0 = globals.down___28049;
     if (!checkSubtype(s.tmp_4.arg0, controller_Button__C28070_VT)) failedCast(s.tmp_4.arg0);
     s.tmp_4.fn = s.tmp_4.arg0.vtable.methods.isPressed;
-    s.pc = 129; return s.tmp_4;
-  case 129:
+    s.pc = 128; return s.tmp_4;
+  case 128:
     r0 = s.retval;
   case 15:
     // jmp value (already in r0)
@@ -1480,8 +1475,8 @@ switch (step) {
     s.tmp_7.arg0 = globals.left___28046;
     if (!checkSubtype(s.tmp_7.arg0, controller_Button__C28070_VT)) failedCast(s.tmp_7.arg0);
     s.tmp_7.fn = s.tmp_7.arg0.vtable.methods.isPressed;
-    s.pc = 130; return s.tmp_7;
-  case 130:
+    s.pc = 129; return s.tmp_7;
+  case 129:
     r0 = s.retval;
     s.tmp_6 = r0;
     r0 = pxsim_numops_toBool(s.tmp_6);
@@ -1493,8 +1488,8 @@ switch (step) {
     s.tmp_8.arg0 = globals.right___28048;
     if (!checkSubtype(s.tmp_8.arg0, controller_Button__C28070_VT)) failedCast(s.tmp_8.arg0);
     s.tmp_8.fn = s.tmp_8.arg0.vtable.methods.isPressed;
-    s.pc = 131; return s.tmp_8;
-  case 131:
+    s.pc = 130; return s.tmp_8;
+  case 130:
     r0 = s.retval;
   case 18:
     // jmp value (already in r0)
@@ -1505,48 +1500,48 @@ switch (step) {
     s.tmp_10 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_10);
     if (!r0) { step = 20; continue; }
-    globals._break___151045 = (true);
+    globals._break___154922 = (true);
   case 20:
   case 21:
     s.tmp_0 = pause__P26569_mk(s);
     s.tmp_0.arg0 = 50;
-    s.callLocIdx = 263; s.pc = 132; return s.tmp_0;
-  case 132:
+    s.callLocIdx = 262; s.pc = 131; return s.tmp_0;
+  case 131:
     r0 = s.retval;
     { step = 13; continue; }
   case 22:
-    r0 = pxsim_numops_toBoolDecr(globals.debug___150899);
+    r0 = pxsim_numops_toBoolDecr(globals.debug___154776);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 27; continue; }
-    r0 = (globals.user_difficulty___150824 == 1);
+    r0 = (globals.user_difficulty___154701 == 1);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 23; continue; }
     s.tmp_3 = info_startCountdown__P28380_mk(s);
     s.tmp_3.arg0 = 30;
-    s.callLocIdx = 264; s.pc = 133; return s.tmp_3;
-  case 133:
+    s.callLocIdx = 263; s.pc = 132; return s.tmp_3;
+  case 132:
     r0 = s.retval;
     { step = 26; continue; }
   case 23:
-    r0 = (globals.user_difficulty___150824 == 2);
+    r0 = (globals.user_difficulty___154701 == 2);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 24; continue; }
     s.tmp_1 = info_startCountdown__P28380_mk(s);
     s.tmp_1.arg0 = 60;
-    s.callLocIdx = 265; s.pc = 134; return s.tmp_1;
-  case 134:
+    s.callLocIdx = 264; s.pc = 133; return s.tmp_1;
+  case 133:
     r0 = s.retval;
     { step = 25; continue; }
   case 24:
     s.tmp_0 = info_startCountdown__P28380_mk(s);
     s.tmp_0.arg0 = 150;
-    s.callLocIdx = 266; s.pc = 135; return s.tmp_0;
-  case 135:
+    s.callLocIdx = 265; s.pc = 134; return s.tmp_0;
+  case 134:
     r0 = s.retval;
   case 25:
   case 26:
@@ -1556,13 +1551,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P151398.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P151398.continuations = [ 88,90,101,102,122,123 ]
+_main___P155484.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P155484.continuations = [ 88,90,101,102,122,123 ]
 
-function _main___P151398_mk(s) {
+function _main___P155484_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P151398, depth: s.depth + 1,
+        parent: s, fn: _main___P155484, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1600,9 +1595,9 @@ const _hex32318 = pxsim.BufferMethods.createBufferFromHex("8704080008000000fffff
 const _hex32322 = pxsim.BufferMethods.createBufferFromHex("87040800080000001111111111111111111111111111111111111111111111111111111111111111")
 const _hex32326 = pxsim.BufferMethods.createBufferFromHex("87040800080000005555555555555555555555555555555555555555555555555555555555555555")
 const _hex32330 = pxsim.BufferMethods.createBufferFromHex("87040800080000007777777777777777777777777777777777777777777777777777777777777777")
-const _hex151050 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111ff1f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ffff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111fffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ff11f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11fff111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1fffffffffff11ff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1ffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11ffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11fffffffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11ffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11fffffffffffffffffffff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11fff1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11fffffffffffffffffffff1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ffffffffffffffffffff111ff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111fffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ff1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11fffffffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")
-const _hex151118 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex151157 = pxsim.BufferMethods.createBufferFromHex("8704060006000000999999009999990099999900999999009999990099999900")
+const _hex154927 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11111111111111ff1f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffffff1f11ffff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff11f1ffffffffff1f11ffffff111111fffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ff11f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11fff111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ff1f11ff1f11fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1fffffffffff11ff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffff11f1ffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11ffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11fffffffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffff111111ffffffff1f11ffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11111111111111fff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11fffffffffffffffffffff1f1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ffff1f11ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1f11ff1f11ff1f11ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11fff1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ff1f11ff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ffffffffffffffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11fffffffffffffffffffff1f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ff1f11ffffffffffffffffffff111ff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111fffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ff1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11fffffffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111fff1fff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ff1111f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ffffffff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11ff1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111f1ff111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f11f1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f1f1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1f111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")
+const _hex154995 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex155034 = pxsim.BufferMethods.createBufferFromHex("8704060006000000999999009999990099999900999999009999990099999900")
 
 
 
@@ -2290,7 +2285,7 @@ function inline__P32103_mk(s) {
 
 
 
-function inline__P150364(s) {
+function inline__P154241(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2300,18 +2295,18 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___150366);
+    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___154243);
     if (!r0) { step = 1; continue; }
     s.tmp_0 = controller_moveSprite__P28119_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_0.arg1 = 40;
     s.tmp_0.arg2 = 40;
     s.callLocIdx = 78; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_setImage__P28223_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
-    r0 = pxsim.image.ofBuffer(_hex150373);
+    s.tmp_0.arg0 = globals.sprite_player___154243;
+    r0 = pxsim.image.ofBuffer(_hex154250);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 79; s.pc = 4; return s.tmp_0;
   case 4:
@@ -2322,22 +2317,22 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150364.info = {"start":146,"length":300,"line":3,"column":52,"endLine":15,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154241.info = {"start":146,"length":300,"line":3,"column":52,"endLine":15,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P150364_mk(s) {
+function inline__P154241_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150364, depth: s.depth + 1,
+        parent: s, fn: inline__P154241, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
 
-const _hex150373 = pxsim.BufferMethods.createBufferFromHex("8704060006000000888888008888880088888800888888008888880088888800")
+const _hex154250 = pxsim.BufferMethods.createBufferFromHex("8704060006000000888888008888880088888800888888008888880088888800")
 
 
 
 
-function inline__P150464(s) {
+function inline__P154341(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2352,14 +2347,14 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_numops_toBoolDecr(globals.won___150470);
+    r0 = pxsim_numops_toBoolDecr(globals.won___154347);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    globals.won___150470 = (true);
-    r0 = pxsim_pxtcore_mkAction(2, inline__P150474);
+    globals.won___154347 = (true);
+    r0 = pxsim_pxtcore_mkAction(2, inline__P154351);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 1, s.arg1);
@@ -2375,12 +2370,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150464.info = {"start":22813,"length":199,"line":157,"column":54,"endLine":165,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P154341.info = {"start":22813,"length":199,"line":157,"column":54,"endLine":165,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P150464_mk(s) {
+function inline__P154341_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150464, depth: s.depth + 1,
+        parent: s, fn: inline__P154341, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2392,7 +2387,7 @@ function inline__P150464_mk(s) {
 
 
 
-function inline__P150474(s) {
+function inline__P154351(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2418,12 +2413,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150474.info = {"start":22904,"length":99,"line":160,"column":24,"endLine":163,"endColumn":9,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154351.info = {"start":22904,"length":99,"line":160,"column":24,"endLine":163,"endColumn":9,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P150474_mk(s) {
+function inline__P154351_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150474, depth: s.depth + 1,
+        parent: s, fn: inline__P154351, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2432,7 +2427,7 @@ function inline__P150474_mk(s) {
 
 
 
-function inline__P150526(s) {
+function inline__P154403(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2443,14 +2438,14 @@ switch (step) {
   case 0:
 
     s.tmp_0 = controller_moveSprite__P28119_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_0.arg1 = 0;
     s.tmp_0.arg2 = 0;
     s.callLocIdx = 115; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = Sprite_destroy__P28254_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_0.arg1 = globals.disintegrate___28977;
     s.tmp_0.arg2 = 200;
     s.callLocIdx = 116; s.pc = 2; return s.tmp_0;
@@ -2458,7 +2453,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = timer_after__P29761_mk(s);
     s.tmp_0.arg0 = 2000;
-    s.tmp_0.arg1 = inline__P150533;
+    s.tmp_0.arg1 = inline__P154410;
     s.callLocIdx = 118; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
@@ -2466,12 +2461,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150526.info = {"start":23697,"length":197,"line":184,"column":20,"endLine":190,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154403.info = {"start":23697,"length":197,"line":184,"column":20,"endLine":190,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P150526_mk(s) {
+function inline__P154403_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150526, depth: s.depth + 1,
+        parent: s, fn: inline__P154403, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2480,7 +2475,7 @@ function inline__P150526_mk(s) {
 
 
 
-function inline__P150533(s) {
+function inline__P154410(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2500,12 +2495,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150533.info = {"start":23833,"length":58,"line":187,"column":22,"endLine":189,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154410.info = {"start":23833,"length":58,"line":187,"column":22,"endLine":189,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P150533_mk(s) {
+function inline__P154410_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150533, depth: s.depth + 1,
+        parent: s, fn: inline__P154410, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2514,7 +2509,7 @@ function inline__P150533_mk(s) {
 
 
 
-function inline__P150805(s) {
+function inline__P154682(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2524,18 +2519,18 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___150366);
+    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___154243);
     if (!r0) { step = 1; continue; }
     s.tmp_0 = controller_moveSprite__P28119_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_0.arg1 = 80;
     s.tmp_0.arg2 = 80;
     s.callLocIdx = 180; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_setImage__P28223_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
-    r0 = pxsim.image.ofBuffer(_hex150812);
+    s.tmp_0.arg0 = globals.sprite_player___154243;
+    r0 = pxsim.image.ofBuffer(_hex154689);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 181; s.pc = 4; return s.tmp_0;
   case 4:
@@ -2546,22 +2541,22 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150805.info = {"start":28061,"length":300,"line":301,"column":53,"endLine":313,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154682.info = {"start":28061,"length":300,"line":301,"column":53,"endLine":313,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P150805_mk(s) {
+function inline__P154682_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150805, depth: s.depth + 1,
+        parent: s, fn: inline__P154682, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
 
-const _hex150812 = pxsim.BufferMethods.createBufferFromHex("8704060006000000999999009999990099999900999999009999990099999900")
+const _hex154689 = pxsim.BufferMethods.createBufferFromHex("8704060006000000999999009999990099999900999999009999990099999900")
 
 
 
 
-function inline__P150829(s) {
+function inline__P154706(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2575,11 +2570,11 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_numops_toBoolDecr(globals.loading___150832);
+    r0 = pxsim_numops_toBoolDecr(globals.loading___154709);
     if (!r0) { step = 1; continue; }
     s.tmp_1 = Math_map__P26438_mk(s);
     s.tmp_2 = Math_constrain__P26439_mk(s);
-    r0 = (globals.loading_numerator___150731 / globals.loading_denominator___150688);
+    r0 = (globals.loading_numerator___154608 / globals.loading_denominator___154565);
     s.tmp_2.arg0 = r0;
     s.tmp_2.arg1 = 0;
     s.tmp_2.arg2 = 1;
@@ -2601,7 +2596,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim.Math_.round(s.tmp_0);
-    globals.length___150835 = (r0);
+    globals.length___154712 = (r0);
     r0 = pxsim_ImageMethods.fill(s.arg0, 15);
     s.tmp_0 = helpers_imageDrawRect__P27898_mk(s);
     s.tmp_0.arg0 = s.arg0;
@@ -2639,7 +2634,7 @@ switch (step) {
     s.tmp_3 = r0;
     r0 = (s.tmp_3 + 2);
     s.tmp_0.arg2 = r0;
-    s.tmp_0.arg3 = globals.length___150835;
+    s.tmp_0.arg3 = globals.length___154712;
     r0 = pxsim_ImageMethods.height(globals.screen___27969);
     s.tmp_6 = r0;
     r0 = (s.tmp_6 * 0.06);
@@ -2652,7 +2647,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = images_printCenter__P29802_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = globals.message1___150885;
+    s.tmp_0.arg1 = globals.message1___154762;
     r0 = pxsim_ImageMethods.width(globals.screen___27969);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 * 0.3);
@@ -2665,7 +2660,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = images_printCenter__P29802_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = globals.message2___150764;
+    s.tmp_0.arg1 = globals.message2___154641;
     r0 = pxsim_ImageMethods.height(globals.screen___27969);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 * 0.53);
@@ -2678,9 +2673,9 @@ switch (step) {
     r0 = s.retval;
   case 1:
   case 2:
-    r0 = pxsim_numops_toBoolDecr(globals.debug___150899);
+    r0 = pxsim_numops_toBoolDecr(globals.debug___154776);
     if (!r0) { step = 13; continue; }
-    r0 = (globals.user_difficulty___150824 == 1);
+    r0 = (globals.user_difficulty___154701 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
@@ -2691,10 +2686,10 @@ switch (step) {
     s.callLocIdx = 200; s.pc = 21; return s.tmp_1;
   case 21:
     r0 = s.retval;
-    globals.minimap2___150904 = (r0);
+    globals.minimap2___154781 = (r0);
     { step = 6; continue; }
   case 3:
-    r0 = (globals.user_difficulty___150824 == 2);
+    r0 = (globals.user_difficulty___154701 == 2);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
@@ -2705,7 +2700,7 @@ switch (step) {
     s.callLocIdx = 201; s.pc = 22; return s.tmp_1;
   case 22:
     r0 = s.retval;
-    globals.minimap2___150904 = (r0);
+    globals.minimap2___154781 = (r0);
     { step = 5; continue; }
   case 4:
     s.tmp_0 = minimap_minimap__P29782_mk(s);
@@ -2715,28 +2710,28 @@ switch (step) {
     s.callLocIdx = 202; s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
-    globals.minimap2___150904 = (r0);
+    globals.minimap2___154781 = (r0);
   case 5:
   case 6:
-    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___150366);
+    r0 = pxsim_numops_toBoolDecr(globals.sprite_player___154243);
     if (!r0) { step = 7; continue; }
     s.tmp_0 = minimap_includeSprite__P29784_mk(s);
-    s.tmp_0.arg0 = globals.minimap2___150904;
-    s.tmp_0.arg1 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.minimap2___154781;
+    s.tmp_0.arg1 = globals.sprite_player___154243;
     s.tmp_0.arg2 = 0;
     s.callLocIdx = 203; s.pc = 24; return s.tmp_0;
   case 24:
     r0 = s.retval;
   case 7:
   case 8:
-    s.tmp_0 = r0 = globals.sprite_cursor___150668;
+    s.tmp_0 = r0 = globals.sprite_cursor___154545;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 9; continue; }
     r0 = s.tmp_0;
     { step = 10; continue; }
   case 9:
     s.tmp_3 = spriteutils_isDestroyed__P29786_mk(s);
-    s.tmp_3.arg0 = globals.sprite_cursor___150668;
+    s.tmp_3.arg0 = globals.sprite_cursor___154545;
     s.callLocIdx = 204; s.pc = 25; return s.tmp_3;
   case 25:
     r0 = s.retval;
@@ -2750,8 +2745,8 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_4);
     if (!r0) { step = 11; continue; }
     s.tmp_5 = minimap_includeSprite__P29784_mk(s);
-    s.tmp_5.arg0 = globals.minimap2___150904;
-    s.tmp_5.arg1 = globals.sprite_cursor___150668;
+    s.tmp_5.arg0 = globals.minimap2___154781;
+    s.tmp_5.arg1 = globals.sprite_cursor___154545;
     s.tmp_5.arg2 = 0;
     s.callLocIdx = 205; s.pc = 26; return s.tmp_5;
   case 26:
@@ -2760,7 +2755,7 @@ switch (step) {
   case 12:
     s.tmp_0 = spriteutils_drawTransparentImage__P29794_mk(s);
     s.tmp_1 = minimap_getImage__P29783_mk(s);
-    s.tmp_1.arg0 = globals.minimap2___150904;
+    s.tmp_1.arg0 = globals.minimap2___154781;
     s.callLocIdx = 206; s.pc = 28; return s.tmp_1;
   case 28:
     r0 = s.retval;
@@ -2777,12 +2772,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P150829.info = {"start":28713,"length":1368,"line":326,"column":34,"endLine":351,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["screen2"]}
+inline__P154706.info = {"start":28713,"length":1368,"line":326,"column":34,"endLine":351,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["screen2"]}
 
-function inline__P150829_mk(s) {
+function inline__P154706_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P150829, depth: s.depth + 1,
+        parent: s, fn: inline__P154706, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2798,7 +2793,7 @@ function inline__P150829_mk(s) {
 
 
 
-function inline__P151023(s) {
+function inline__P154900(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2813,17 +2808,17 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    globals.selected_menu___150592 = (true);
+    globals.selected_menu___154469 = (true);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P151023.info = {"start":30936,"length":53,"line":379,"column":31,"endLine":381,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["option","index"]}
+inline__P154900.info = {"start":30936,"length":53,"line":379,"column":31,"endLine":381,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["option","index"]}
 
-function inline__P151023_mk(s) {
+function inline__P154900_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P151023, depth: s.depth + 1,
+        parent: s, fn: inline__P154900, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -2833,7 +2828,7 @@ function inline__P151023_mk(s) {
 
 
 
-function inline__P151054(s) {
+function inline__P154931(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2852,12 +2847,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P151054.info = {"start":51730,"length":54,"line":548,"column":18,"endLine":550,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P154931.info = {"start":51730,"length":54,"line":548,"column":18,"endLine":550,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P151054_mk(s) {
+function inline__P154931_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P151054, depth: s.depth + 1,
+        parent: s, fn: inline__P154931, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -7470,7 +7465,7 @@ function tiles_TileMapData_width__P28473_mk(s) {
 
 
 
-function set_end__P150513(s) {
+function set_end__P154390(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -7513,12 +7508,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-set_end__P150513.info = {"start":23501,"length":175,"line":180,"column":0,"endLine":183,"endColumn":1,"fileName":"main.ts","functionName":"set_end","argumentNames":["col","row"]}
+set_end__P154390.info = {"start":23501,"length":175,"line":180,"column":0,"endLine":183,"endColumn":1,"fileName":"main.ts","functionName":"set_end","argumentNames":["col","row"]}
 
-function set_end__P150513_mk(s) {
+function set_end__P154390_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: set_end__P150513, depth: s.depth + 1,
+        parent: s, fn: set_end__P154390, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -8604,7 +8599,7 @@ function tiles_TileMapData_setTile__P28478_mk(s) {
 
 
 
-function set_start__P150935(s) {
+function set_start__P154812(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -8620,7 +8615,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     s.tmp_0 = tiles_placeOnTile__P28515_mk(s);
-    s.tmp_0.arg0 = globals.sprite_player___150366;
+    s.tmp_0.arg0 = globals.sprite_player___154243;
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.tmp_1.arg1 = s.arg1;
@@ -8635,12 +8630,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-set_start__P150935.info = {"start":30083,"length":119,"line":352,"column":0,"endLine":354,"endColumn":1,"fileName":"main.ts","functionName":"set_start","argumentNames":["col","row"]}
+set_start__P154812.info = {"start":30083,"length":119,"line":352,"column":0,"endLine":354,"endColumn":1,"fileName":"main.ts","functionName":"set_start","argumentNames":["col","row"]}
 
-function set_start__P150935_mk(s) {
+function set_start__P154812_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: set_start__P150935, depth: s.depth + 1,
+        parent: s, fn: set_start__P154812, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10018,7 +10013,7 @@ function Sprite_vx__P28196_mk(s) {
 
 
 
-function make_walls__P151002(s) {
+function make_walls__P154879(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10028,53 +10023,53 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.loc___151004 = undefined;
-    s.unnamed950___U1 = undefined;
-    s.unnamed951___U2 = undefined;
-    s.loc___151004 = (undefined);
+    s.loc___154881 = undefined;
+    s.unnamed1010___U1 = undefined;
+    s.unnamed1011___U2 = undefined;
+    s.loc___154881 = (undefined);
     s.tmp_0 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_0.arg0 = globals.tile5___30044;
     s.callLocIdx = 211; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    s.unnamed950___U1 = (r0);
-    s.unnamed951___U2 = (0);
+    s.unnamed1010___U1 = (r0);
+    s.unnamed1011___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed951___U2;
-    r0 = pxsim_Array__length(s.unnamed950___U1);
+    s.tmp_0 = r0 = s.unnamed1011___U2;
+    r0 = pxsim_Array__length(s.unnamed1010___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 2; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed950___U1, s.unnamed951___U2);
-    s.loc___151004 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed1010___U1, s.unnamed1011___U2);
+    s.loc___154881 = (r0);
     s.tmp_2 = tiles_setWallAt__P28510_mk(s);
-    s.tmp_2.arg0 = s.loc___151004;
+    s.tmp_2.arg0 = s.loc___154881;
     s.tmp_2.arg1 = true;
     s.callLocIdx = 212; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
-    r0 = (s.unnamed951___U2 + 1);
-    s.unnamed951___U2 = (r0);
+    r0 = (s.unnamed1011___U2 + 1);
+    s.unnamed1011___U2 = (r0);
     { step = 1; continue; }
   case 2:
-    s.unnamed950___U1 = (undefined);
+    s.unnamed1010___U1 = (undefined);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-make_walls__P151002.info = {"start":30572,"length":126,"line":370,"column":0,"endLine":374,"endColumn":1,"fileName":"main.ts","functionName":"make_walls","argumentNames":[]}
+make_walls__P154879.info = {"start":30572,"length":126,"line":370,"column":0,"endLine":374,"endColumn":1,"fileName":"main.ts","functionName":"make_walls","argumentNames":[]}
 
-function make_walls__P151002_mk(s) {
+function make_walls__P154879_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: make_walls__P151002, depth: s.depth + 1,
+        parent: s, fn: make_walls__P154879, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  loc___151004: undefined,
-  unnamed950___U1: undefined,
-  unnamed951___U2: undefined,
+  loc___154881: undefined,
+  unnamed1010___U1: undefined,
+  unnamed1011___U2: undefined,
 } }
 
 
@@ -10435,7 +10430,7 @@ function tiles_TileMapData_getTile__P28477_mk(s) {
 
 
 
-function make_maze__P150664(s) {
+function make_maze__P154541(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10451,16 +10446,16 @@ switch (step) {
       s.lambdaArgs = null;
     }
     s.tmp_0 = sprites_create__P28141_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex150672);
+    r0 = pxsim.image.ofBuffer(_hex154549);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___28295;
     s.callLocIdx = 151; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    globals.sprite_cursor___150668 = (r0);
-    globals.current_col___150378 = (s.arg0);
-    globals.current_row___150387 = (s.arg1);
-    globals.target_tile___150390 = (globals.tile7___30046);
+    globals.sprite_cursor___154545 = (r0);
+    globals.current_col___154255 = (s.arg0);
+    globals.current_row___154264 = (s.arg1);
+    globals.target_tile___154267 = (globals.tile7___30046);
     s.tmp_1 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_1.arg0 = globals.tile7___30046;
     s.callLocIdx = 152; s.pc = 12; return s.tmp_1;
@@ -10468,13 +10463,13 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    globals.total_unvisited_tiles___150681 = (r0);
-    r0 = (globals.loading_denominator___150688 + globals.total_unvisited_tiles___150681);
-    globals.loading_denominator___150688 = (r0);
+    globals.total_unvisited_tiles___154558 = (r0);
+    r0 = (globals.loading_denominator___154565 + globals.total_unvisited_tiles___154558);
+    globals.loading_denominator___154565 = (r0);
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 153; s.pc = 14; return s.tmp_1;
   case 14:
     r0 = s.retval;
@@ -10500,7 +10495,7 @@ switch (step) {
     s.callLocIdx = 156; s.pc = 16; return s.tmp_4;
   case 16:
     r0 = s.retval;
-    globals.start_step_time___150703 = (r0);
+    globals.start_step_time___154580 = (r0);
     s.tmp_1 = Math_percentChance__P28751_mk(s);
     s.tmp_1.arg0 = 1;
     s.callLocIdx = 157; s.pc = 17; return s.tmp_1;
@@ -10509,13 +10504,13 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.tmp_2 = new_spot__P150708_mk(s);
+    s.tmp_2 = new_spot__P154585_mk(s);
     s.callLocIdx = 158; s.pc = 18; return s.tmp_2;
   case 18:
     r0 = s.retval;
-    globals.target_tile___150390 = (globals.tile6___30045);
+    globals.target_tile___154267 = (globals.tile6___30045);
   case 2:
-    s.tmp_3 = make_random_path__P150536_mk(s);
+    s.tmp_3 = make_random_path__P154413_mk(s);
     s.tmp_3.arg0 = false;
     s.callLocIdx = 159; s.pc = 19; return s.tmp_3;
   case 19:
@@ -10528,10 +10523,10 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
     s.tmp_4 = tiles_placeOnTile__P28515_mk(s);
-    s.tmp_4.arg0 = globals.sprite_cursor___150668;
+    s.tmp_4.arg0 = globals.sprite_cursor___154545;
     s.tmp_5 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_5.arg0 = globals.current_col___150378;
-    s.tmp_5.arg1 = globals.current_row___150387;
+    s.tmp_5.arg0 = globals.current_col___154255;
+    s.tmp_5.arg1 = globals.current_row___154264;
     s.callLocIdx = 160; s.pc = 21; return s.tmp_5;
   case 21:
     r0 = s.retval;
@@ -10548,14 +10543,14 @@ switch (step) {
   case 3:
     { step = 5; continue; }
   case 4:
-    globals.target_tile___150390 = (globals.tile7___30046);
-    s.tmp_0 = make_random_path__P150536_mk(s);
+    globals.target_tile___154267 = (globals.tile7___30046);
+    s.tmp_0 = make_random_path__P154413_mk(s);
     s.tmp_0.arg0 = true;
     s.callLocIdx = 163; s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
   case 5:
-    s.tmp_1 = r0 = globals.total_unvisited_tiles___150681;
+    s.tmp_1 = r0 = globals.total_unvisited_tiles___154558;
     s.tmp_4 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_4.arg0 = globals.tile7___30046;
     s.callLocIdx = 164; s.pc = 24; return s.tmp_4;
@@ -10568,8 +10563,8 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 6; continue; }
-    s.tmp_5 = r0 = globals.loading_numerator___150731;
-    s.tmp_7 = r0 = globals.total_unvisited_tiles___150681;
+    s.tmp_5 = r0 = globals.loading_numerator___154608;
+    s.tmp_7 = r0 = globals.total_unvisited_tiles___154558;
     s.tmp_10 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_10.arg0 = globals.tile7___30046;
     s.callLocIdx = 165; s.pc = 25; return s.tmp_10;
@@ -10581,7 +10576,7 @@ switch (step) {
     r0 = (s.tmp_7 - s.tmp_8);
     s.tmp_6 = r0;
     r0 = (s.tmp_5 + s.tmp_6);
-    globals.loading_numerator___150731 = (r0);
+    globals.loading_numerator___154608 = (r0);
     s.tmp_1 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_1.arg0 = globals.tile7___30046;
     s.callLocIdx = 166; s.pc = 26; return s.tmp_1;
@@ -10589,14 +10584,14 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    globals.total_unvisited_tiles___150681 = (r0);
+    globals.total_unvisited_tiles___154558 = (r0);
   case 6:
   case 7:
     s.tmp_0 = tiles_placeOnTile__P28515_mk(s);
-    s.tmp_0.arg0 = globals.sprite_cursor___150668;
+    s.tmp_0.arg0 = globals.sprite_cursor___154545;
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 167; s.pc = 28; return s.tmp_1;
   case 28:
     r0 = s.retval;
@@ -10609,7 +10604,7 @@ switch (step) {
   case 29:
     r0 = s.retval;
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 - globals.start_step_time___150703);
+    r0 = (s.tmp_2 - globals.start_step_time___154580);
     s.tmp_1 = r0;
     s.tmp_6 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_6.arg0 = globals.tile7___30046;
@@ -10622,13 +10617,13 @@ switch (step) {
     r0 = (s.tmp_1 * s.tmp_4);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 / 1000);
-    globals.eta___150749 = (r0);
-    r0 = (globals.eta___150749 != 0);
+    globals.eta___154626 = (r0);
+    r0 = (globals.eta___154626 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    s.tmp_3 = format_seconds__P150770_mk(s);
-    r0 = pxsim.Math_.round(globals.eta___150749);
+    s.tmp_3 = format_seconds__P154647_mk(s);
+    r0 = pxsim.Math_.round(globals.eta___154626);
     s.tmp_3.arg0 = r0;
     s.callLocIdx = 171; s.pc = 31; return s.tmp_3;
   case 31:
@@ -10644,7 +10639,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("ETA: ", s.tmp_1);
-    globals.message2___150764 = (r0);
+    globals.message2___154641 = (r0);
   case 8:
   case 9:
     s.tmp_0 = pause__P26569_mk(s);
@@ -10655,7 +10650,7 @@ switch (step) {
     { step = 1; continue; }
   case 10:
     s.tmp_0 = Sprite_destroy__P28254_mk(s);
-    s.tmp_0.arg0 = globals.sprite_cursor___150668;
+    s.tmp_0.arg0 = globals.sprite_cursor___154545;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
     s.callLocIdx = 173; s.pc = 34; return s.tmp_0;
@@ -10665,12 +10660,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-make_maze__P150664.info = {"start":25778,"length":1813,"line":246,"column":0,"endLine":289,"endColumn":1,"fileName":"main.ts","functionName":"make_maze","argumentNames":["start_col","start_row"]}
+make_maze__P154541.info = {"start":25778,"length":1813,"line":246,"column":0,"endLine":289,"endColumn":1,"fileName":"main.ts","functionName":"make_maze","argumentNames":["start_col","start_row"]}
 
-function make_maze__P150664_mk(s) {
+function make_maze__P154541_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: make_maze__P150664, depth: s.depth + 1,
+        parent: s, fn: make_maze__P154541, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10687,12 +10682,12 @@ function make_maze__P150664_mk(s) {
   arg1: undefined,
 } }
 
-const _hex150672 = pxsim.BufferMethods.createBufferFromHex("87040800080000002222222222222222222222222222222222222222222222222222222222222222")
+const _hex154549 = pxsim.BufferMethods.createBufferFromHex("87040800080000002222222222222222222222222222222222222222222222222222222222222222")
 
 
 
 
-function format_seconds__P150770(s) {
+function format_seconds__P154647(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10707,84 +10702,84 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = pxsim.Math_.idiv(s.arg0, 60);
-    globals.mins___150945 = (r0);
+    globals.mins___154822 = (r0);
     s.tmp_0 = r0 = s.arg0;
     r0 = pxsim.Math_.idiv(s.arg0, 60);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 * 60);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 - s.tmp_1);
-    globals.secs___150951 = (r0);
-    r0 = (globals.mins___150945 < 10);
+    globals.secs___154828 = (r0);
+    r0 = (globals.mins___154822 < 10);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    if ((globals.mins___150945) && (globals.mins___150945).vtable) {
+    if ((globals.mins___154822) && (globals.mins___154822).vtable) {
     setupResume(s, 5);
-    pxsim_String__stringConv(globals.mins___150945);
+    pxsim_String__stringConv(globals.mins___154822);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.mins___150945) + ""; }
+    } else { s.retval = (globals.mins___154822) + ""; }
   case 5:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("0", s.tmp_1);
-    globals.mins_str___150962 = (r0);
+    globals.mins_str___154839 = (r0);
     { step = 2; continue; }
   case 1:
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0 = r0;
-    if ((globals.mins___150945) && (globals.mins___150945).vtable) {
+    if ((globals.mins___154822) && (globals.mins___154822).vtable) {
     setupResume(s, 6);
-    pxsim_String__stringConv(globals.mins___150945);
+    pxsim_String__stringConv(globals.mins___154822);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.mins___150945) + ""; }
+    } else { s.retval = (globals.mins___154822) + ""; }
   case 6:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.mins_str___150962 = (r0);
+    globals.mins_str___154839 = (r0);
   case 2:
-    r0 = (globals.secs___150951 < 10);
+    r0 = (globals.secs___154828 < 10);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    if ((globals.secs___150951) && (globals.secs___150951).vtable) {
+    if ((globals.secs___154828) && (globals.secs___154828).vtable) {
     setupResume(s, 7);
-    pxsim_String__stringConv(globals.secs___150951);
+    pxsim_String__stringConv(globals.secs___154828);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.secs___150951) + ""; }
+    } else { s.retval = (globals.secs___154828) + ""; }
   case 7:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("0", s.tmp_1);
-    globals.secs_str___150977 = (r0);
+    globals.secs_str___154854 = (r0);
     { step = 4; continue; }
   case 3:
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0 = r0;
-    if ((globals.secs___150951) && (globals.secs___150951).vtable) {
+    if ((globals.secs___154828) && (globals.secs___154828).vtable) {
     setupResume(s, 8);
-    pxsim_String__stringConv(globals.secs___150951);
+    pxsim_String__stringConv(globals.secs___154828);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.secs___150951) + ""; }
+    } else { s.retval = (globals.secs___154828) + ""; }
   case 8:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.secs_str___150977 = (r0);
+    globals.secs_str___154854 = (r0);
   case 4:
     r0 = pxsim_String_.mkEmpty();
     s.tmp_4 = r0;
-    if ((globals.mins_str___150962) && (globals.mins_str___150962).vtable) {
+    if ((globals.mins_str___154839) && (globals.mins_str___154839).vtable) {
     setupResume(s, 9);
-    pxsim_String__stringConv(globals.mins_str___150962);
+    pxsim_String__stringConv(globals.mins_str___154839);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.mins_str___150962) + ""; }
+    } else { s.retval = (globals.mins_str___154839) + ""; }
   case 9:
     r0 = s.retval;
     s.tmp_5 = r0;
@@ -10810,12 +10805,12 @@ switch (step) {
   case 11:
     r0 = s.retval;
     s.tmp_0 = r0;
-    if ((globals.secs_str___150977) && (globals.secs_str___150977).vtable) {
+    if ((globals.secs_str___154854) && (globals.secs_str___154854).vtable) {
     setupResume(s, 12);
-    pxsim_String__stringConv(globals.secs_str___150977);
+    pxsim_String__stringConv(globals.secs_str___154854);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.secs_str___150977) + ""; }
+    } else { s.retval = (globals.secs_str___154854) + ""; }
   case 12:
     r0 = s.retval;
     s.tmp_6 = r0;
@@ -10823,12 +10818,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-format_seconds__P150770.info = {"start":30203,"length":368,"line":355,"column":0,"endLine":369,"endColumn":1,"fileName":"main.ts","functionName":"format_seconds","argumentNames":["seconds"]}
+format_seconds__P154647.info = {"start":30203,"length":368,"line":355,"column":0,"endLine":369,"endColumn":1,"fileName":"main.ts","functionName":"format_seconds","argumentNames":["seconds"]}
 
-function format_seconds__P150770_mk(s) {
+function format_seconds__P154647_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: format_seconds__P150770, depth: s.depth + 1,
+        parent: s, fn: format_seconds__P154647, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10844,7 +10839,7 @@ function format_seconds__P150770_mk(s) {
 
 
 
-function make_random_path__P150536(s) {
+function make_random_path__P154413(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10877,8 +10872,8 @@ switch (step) {
     r0 = s.tmp_2;
     { step = 2; continue; }
   case 1:
-    s.tmp_6 = rows_in_tilemap__P150548_mk(s);
-    r0 = (globals.current_row___150387 + 2);
+    s.tmp_6 = rows_in_tilemap__P154425_mk(s);
+    r0 = (globals.current_row___154264 + 2);
     s.tmp_6.arg0 = r0;
     s.callLocIdx = 122; s.pc = 18; return s.tmp_6;
   case 18:
@@ -10895,8 +10890,8 @@ switch (step) {
     r0 = s.tmp_7;
     { step = 4; continue; }
   case 3:
-    s.tmp_8 = rows_in_tilemap__P150548_mk(s);
-    r0 = (globals.current_row___150387 - 2);
+    s.tmp_8 = rows_in_tilemap__P154425_mk(s);
+    r0 = (globals.current_row___154264 - 2);
     s.tmp_8.arg0 = r0;
     s.callLocIdx = 123; s.pc = 19; return s.tmp_8;
   case 19:
@@ -10906,7 +10901,7 @@ switch (step) {
     s.tmp_9 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_9);
     if (!r0) { step = 5; continue; }
-    s.tmp_10 = path_up__P150556_mk(s);
+    s.tmp_10 = path_up__P154433_mk(s);
     s.tmp_10.arg0 = s.arg0;
     s.callLocIdx = 124; s.pc = 20; return s.tmp_10;
   case 20:
@@ -10914,7 +10909,7 @@ switch (step) {
     { step = 15; continue; }
     { step = 6; continue; }
   case 5:
-    s.tmp_11 = path_down__P150405_mk(s);
+    s.tmp_11 = path_down__P154282_mk(s);
     s.tmp_11.arg0 = s.arg0;
     s.callLocIdx = 125; s.pc = 21; return s.tmp_11;
   case 21:
@@ -10934,8 +10929,8 @@ switch (step) {
     r0 = s.tmp_12;
     { step = 9; continue; }
   case 8:
-    s.tmp_16 = col_in_tilemap__P150353_mk(s);
-    r0 = (globals.current_col___150378 + 2);
+    s.tmp_16 = col_in_tilemap__P154230_mk(s);
+    r0 = (globals.current_col___154255 + 2);
     s.tmp_16.arg0 = r0;
     s.callLocIdx = 127; s.pc = 23; return s.tmp_16;
   case 23:
@@ -10952,8 +10947,8 @@ switch (step) {
     r0 = s.tmp_17;
     { step = 11; continue; }
   case 10:
-    s.tmp_18 = col_in_tilemap__P150353_mk(s);
-    r0 = (globals.current_col___150378 - 2);
+    s.tmp_18 = col_in_tilemap__P154230_mk(s);
+    r0 = (globals.current_col___154255 - 2);
     s.tmp_18.arg0 = r0;
     s.callLocIdx = 128; s.pc = 24; return s.tmp_18;
   case 24:
@@ -10963,7 +10958,7 @@ switch (step) {
     s.tmp_19 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_19);
     if (!r0) { step = 12; continue; }
-    s.tmp_20 = path_left__P150374_mk(s);
+    s.tmp_20 = path_left__P154251_mk(s);
     s.tmp_20.arg0 = s.arg0;
     s.callLocIdx = 129; s.pc = 25; return s.tmp_20;
   case 25:
@@ -10971,7 +10966,7 @@ switch (step) {
     { step = 15; continue; }
     { step = 13; continue; }
   case 12:
-    s.tmp_21 = path_right__P150578_mk(s);
+    s.tmp_21 = path_right__P154455_mk(s);
     s.tmp_21.arg0 = s.arg0;
     s.callLocIdx = 130; s.pc = 26; return s.tmp_21;
   case 26:
@@ -10984,12 +10979,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-make_random_path__P150536.info = {"start":23896,"length":549,"line":191,"column":0,"endLine":205,"endColumn":1,"fileName":"main.ts","functionName":"make_random_path","argumentNames":["clear_wall"]}
+make_random_path__P154413.info = {"start":23896,"length":549,"line":191,"column":0,"endLine":205,"endColumn":1,"fileName":"main.ts","functionName":"make_random_path","argumentNames":["clear_wall"]}
 
-function make_random_path__P150536_mk(s) {
+function make_random_path__P154413_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: make_random_path__P150536, depth: s.depth + 1,
+        parent: s, fn: make_random_path__P154413, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -11020,7 +11015,7 @@ function make_random_path__P150536_mk(s) {
 
 
 
-function path_right__P150578(s) {
+function path_right__P154455(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -11034,17 +11029,17 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.current_col___150378 + 2);
-    globals.current_col___150378 = (r0);
+    r0 = (globals.current_col___154255 + 2);
+    globals.current_col___154255 = (r0);
     s.tmp_1 = tiles_tileIs__P29869_mk(s);
     s.tmp_2 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_2.arg0 = globals.current_col___150378;
-    s.tmp_2.arg1 = globals.current_row___150387;
+    s.tmp_2.arg0 = globals.current_col___154255;
+    s.tmp_2.arg1 = globals.current_row___154264;
     s.callLocIdx = 174; s.pc = 7; return s.tmp_2;
   case 7:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.tmp_1.arg1 = globals.target_tile___150390;
+    s.tmp_1.arg1 = globals.target_tile___154267;
     s.callLocIdx = 175; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
@@ -11053,9 +11048,9 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_3 = tiles_setTileAt__P28509_mk(s);
     s.tmp_4 = tiles_getTileLocation__P28511_mk(s);
-    r0 = (globals.current_col___150378 - 1);
+    r0 = (globals.current_col___154255 - 1);
     s.tmp_4.arg0 = r0;
-    s.tmp_4.arg1 = globals.current_row___150387;
+    s.tmp_4.arg1 = globals.current_row___154264;
     s.callLocIdx = 176; s.pc = 9; return s.tmp_4;
   case 9:
     r0 = s.retval;
@@ -11068,8 +11063,8 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 178; s.pc = 11; return s.tmp_1;
   case 11:
     r0 = s.retval;
@@ -11089,12 +11084,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-path_right__P150578.info = {"start":27592,"length":415,"line":290,"column":0,"endLine":300,"endColumn":1,"fileName":"main.ts","functionName":"path_right","argumentNames":["clear_wall"]}
+path_right__P154455.info = {"start":27592,"length":415,"line":290,"column":0,"endLine":300,"endColumn":1,"fileName":"main.ts","functionName":"path_right","argumentNames":["clear_wall"]}
 
-function path_right__P150578_mk(s) {
+function path_right__P154455_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: path_right__P150578, depth: s.depth + 1,
+        parent: s, fn: path_right__P154455, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -11751,7 +11746,7 @@ function tiles_locationColumn__P29883_mk(s) {
 
 
 
-function path_left__P150374(s) {
+function path_left__P154251(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -11765,17 +11760,17 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.current_col___150378 + -2);
-    globals.current_col___150378 = (r0);
+    r0 = (globals.current_col___154255 + -2);
+    globals.current_col___154255 = (r0);
     s.tmp_1 = tiles_tileIs__P29869_mk(s);
     s.tmp_2 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_2.arg0 = globals.current_col___150378;
-    s.tmp_2.arg1 = globals.current_row___150387;
+    s.tmp_2.arg0 = globals.current_col___154255;
+    s.tmp_2.arg1 = globals.current_row___154264;
     s.callLocIdx = 81; s.pc = 7; return s.tmp_2;
   case 7:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.tmp_1.arg1 = globals.target_tile___150390;
+    s.tmp_1.arg1 = globals.target_tile___154267;
     s.callLocIdx = 82; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
@@ -11784,9 +11779,9 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_3 = tiles_setTileAt__P28509_mk(s);
     s.tmp_4 = tiles_getTileLocation__P28511_mk(s);
-    r0 = (globals.current_col___150378 + 1);
+    r0 = (globals.current_col___154255 + 1);
     s.tmp_4.arg0 = r0;
-    s.tmp_4.arg1 = globals.current_row___150387;
+    s.tmp_4.arg1 = globals.current_row___154264;
     s.callLocIdx = 83; s.pc = 9; return s.tmp_4;
   case 9:
     r0 = s.retval;
@@ -11799,8 +11794,8 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 85; s.pc = 11; return s.tmp_1;
   case 11:
     r0 = s.retval;
@@ -11820,12 +11815,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-path_left__P150374.info = {"start":448,"length":415,"line":16,"column":0,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"path_left","argumentNames":["clear_wall"]}
+path_left__P154251.info = {"start":448,"length":415,"line":16,"column":0,"endLine":26,"endColumn":1,"fileName":"main.ts","functionName":"path_left","argumentNames":["clear_wall"]}
 
-function path_left__P150374_mk(s) {
+function path_left__P154251_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: path_left__P150374, depth: s.depth + 1,
+        parent: s, fn: path_left__P154251, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -11839,7 +11834,7 @@ function path_left__P150374_mk(s) {
 
 
 
-function col_in_tilemap__P150353(s) {
+function col_in_tilemap__P154230(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -11874,12 +11869,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-col_in_tilemap__P150353.info = {"start":0,"length":93,"line":0,"column":0,"endLine":2,"endColumn":1,"fileName":"main.ts","functionName":"col_in_tilemap","argumentNames":["col"]}
+col_in_tilemap__P154230.info = {"start":0,"length":93,"line":0,"column":0,"endLine":2,"endColumn":1,"fileName":"main.ts","functionName":"col_in_tilemap","argumentNames":["col"]}
 
-function col_in_tilemap__P150353_mk(s) {
+function col_in_tilemap__P154230_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: col_in_tilemap__P150353, depth: s.depth + 1,
+        parent: s, fn: col_in_tilemap__P154230, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -11893,7 +11888,7 @@ function col_in_tilemap__P150353_mk(s) {
 
 
 
-function path_down__P150405(s) {
+function path_down__P154282(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -11907,17 +11902,17 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.current_row___150387 + 2);
-    globals.current_row___150387 = (r0);
+    r0 = (globals.current_row___154264 + 2);
+    globals.current_row___154264 = (r0);
     s.tmp_1 = tiles_tileIs__P29869_mk(s);
     s.tmp_2 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_2.arg0 = globals.current_col___150378;
-    s.tmp_2.arg1 = globals.current_row___150387;
+    s.tmp_2.arg0 = globals.current_col___154255;
+    s.tmp_2.arg1 = globals.current_row___154264;
     s.callLocIdx = 87; s.pc = 7; return s.tmp_2;
   case 7:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.tmp_1.arg1 = globals.target_tile___150390;
+    s.tmp_1.arg1 = globals.target_tile___154267;
     s.callLocIdx = 88; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
@@ -11926,8 +11921,8 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_3 = tiles_setTileAt__P28509_mk(s);
     s.tmp_4 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_4.arg0 = globals.current_col___150378;
-    r0 = (globals.current_row___150387 - 1);
+    s.tmp_4.arg0 = globals.current_col___154255;
+    r0 = (globals.current_row___154264 - 1);
     s.tmp_4.arg1 = r0;
     s.callLocIdx = 89; s.pc = 9; return s.tmp_4;
   case 9:
@@ -11941,8 +11936,8 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 91; s.pc = 11; return s.tmp_1;
   case 11:
     r0 = s.retval;
@@ -11962,12 +11957,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-path_down__P150405.info = {"start":864,"length":414,"line":27,"column":0,"endLine":37,"endColumn":1,"fileName":"main.ts","functionName":"path_down","argumentNames":["clear_wall"]}
+path_down__P154282.info = {"start":864,"length":414,"line":27,"column":0,"endLine":37,"endColumn":1,"fileName":"main.ts","functionName":"path_down","argumentNames":["clear_wall"]}
 
-function path_down__P150405_mk(s) {
+function path_down__P154282_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: path_down__P150405, depth: s.depth + 1,
+        parent: s, fn: path_down__P154282, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -11981,7 +11976,7 @@ function path_down__P150405_mk(s) {
 
 
 
-function path_up__P150556(s) {
+function path_up__P154433(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -11995,17 +11990,17 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.current_row___150387 + -2);
-    globals.current_row___150387 = (r0);
+    r0 = (globals.current_row___154264 + -2);
+    globals.current_row___154264 = (r0);
     s.tmp_1 = tiles_tileIs__P29869_mk(s);
     s.tmp_2 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_2.arg0 = globals.current_col___150378;
-    s.tmp_2.arg1 = globals.current_row___150387;
+    s.tmp_2.arg0 = globals.current_col___154255;
+    s.tmp_2.arg1 = globals.current_row___154264;
     s.callLocIdx = 137; s.pc = 7; return s.tmp_2;
   case 7:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.tmp_1.arg1 = globals.target_tile___150390;
+    s.tmp_1.arg1 = globals.target_tile___154267;
     s.callLocIdx = 138; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
@@ -12016,8 +12011,8 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_3 = tiles_setTileAt__P28509_mk(s);
     s.tmp_4 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_4.arg0 = globals.current_col___150378;
-    r0 = (globals.current_row___150387 + 1);
+    s.tmp_4.arg0 = globals.current_col___154255;
+    r0 = (globals.current_row___154264 + 1);
     s.tmp_4.arg1 = r0;
     s.callLocIdx = 139; s.pc = 9; return s.tmp_4;
   case 9:
@@ -12031,8 +12026,8 @@ switch (step) {
   case 2:
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = globals.current_col___150378;
-    s.tmp_1.arg1 = globals.current_row___150387;
+    s.tmp_1.arg0 = globals.current_col___154255;
+    s.tmp_1.arg1 = globals.current_row___154264;
     s.callLocIdx = 141; s.pc = 11; return s.tmp_1;
   case 11:
     r0 = s.retval;
@@ -12050,12 +12045,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-path_up__P150556.info = {"start":24935,"length":413,"line":223,"column":0,"endLine":233,"endColumn":1,"fileName":"main.ts","functionName":"path_up","argumentNames":["clear_wall"]}
+path_up__P154433.info = {"start":24935,"length":413,"line":223,"column":0,"endLine":233,"endColumn":1,"fileName":"main.ts","functionName":"path_up","argumentNames":["clear_wall"]}
 
-function path_up__P150556_mk(s) {
+function path_up__P154433_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: path_up__P150556, depth: s.depth + 1,
+        parent: s, fn: path_up__P154433, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12069,7 +12064,7 @@ function path_up__P150556_mk(s) {
 
 
 
-function rows_in_tilemap__P150548(s) {
+function rows_in_tilemap__P154425(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12104,12 +12099,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-rows_in_tilemap__P150548.info = {"start":28363,"length":91,"line":314,"column":0,"endLine":316,"endColumn":1,"fileName":"main.ts","functionName":"rows_in_tilemap","argumentNames":["row"]}
+rows_in_tilemap__P154425.info = {"start":28363,"length":91,"line":314,"column":0,"endLine":316,"endColumn":1,"fileName":"main.ts","functionName":"rows_in_tilemap","argumentNames":["row"]}
 
-function rows_in_tilemap__P150548_mk(s) {
+function rows_in_tilemap__P154425_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: rows_in_tilemap__P150548, depth: s.depth + 1,
+        parent: s, fn: rows_in_tilemap__P154425, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12123,7 +12118,7 @@ function rows_in_tilemap__P150548_mk(s) {
 
 
 
-function new_spot__P150708(s) {
+function new_spot__P154585(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12146,7 +12141,7 @@ switch (step) {
     s.callLocIdx = 214; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.current_col___150378 = (r0);
+    globals.current_col___154255 = (r0);
     s.tmp_0 = tiles_locationXY__P29894_mk(s);
     s.tmp_2 = tiles_getTilesByType__P28517_mk(s);
     s.tmp_2.arg0 = globals.tile7___30046;
@@ -12160,17 +12155,17 @@ switch (step) {
     s.callLocIdx = 216; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    globals.current_row___150387 = (r0);
+    globals.current_row___154264 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-new_spot__P150708.info = {"start":30699,"length":205,"line":375,"column":0,"endLine":378,"endColumn":1,"fileName":"main.ts","functionName":"new_spot","argumentNames":[]}
+new_spot__P154585.info = {"start":30699,"length":205,"line":375,"column":0,"endLine":378,"endColumn":1,"fileName":"main.ts","functionName":"new_spot","argumentNames":[]}
 
-function new_spot__P150708_mk(s) {
+function new_spot__P154585_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: new_spot__P150708, depth: s.depth + 1,
+        parent: s, fn: new_spot__P154585, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12480,7 +12475,7 @@ function Math_percentChance__P28751_mk(s) {
 
 
 
-function divide_maze__P150630(s) {
+function divide_maze__P154507(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12490,11 +12485,11 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.row___150631 = undefined;
-    s.col___150638 = undefined;
-    s.row___150631 = (0);
+    s.row___154508 = undefined;
+    s.col___154515 = undefined;
+    s.row___154508 = (0);
   case 1:
-    s.tmp_1 = r0 = s.row___150631;
+    s.tmp_1 = r0 = s.row___154508;
     s.tmp_4 = tiles_tilemapRows__P29899_mk(s);
     s.callLocIdx = 143; s.pc = 9; return s.tmp_4;
   case 9:
@@ -12506,9 +12501,9 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    s.col___150638 = (0);
+    s.col___154515 = (0);
   case 2:
-    s.tmp_1 = r0 = s.col___150638;
+    s.tmp_1 = r0 = s.col___154515;
     s.tmp_4 = tiles_tilemapColumns__P29898_mk(s);
     s.callLocIdx = 144; s.pc = 10; return s.tmp_4;
   case 10:
@@ -12520,9 +12515,9 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
-    r0 = pxsim.Math_.idiv(s.col___150638, 2);
+    r0 = pxsim.Math_.idiv(s.col___154515, 2);
     s.tmp_6 = r0;
-    r0 = (s.col___150638 / 2);
+    r0 = (s.col___154515 / 2);
     s.tmp_7 = r0;
     r0 = (s.tmp_6 == s.tmp_7);
     s.tmp_5 = r0;
@@ -12530,8 +12525,8 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_8 = tiles_setTileAt__P28509_mk(s);
     s.tmp_9 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_9.arg0 = s.col___150638;
-    s.tmp_9.arg1 = s.row___150631;
+    s.tmp_9.arg0 = s.col___154515;
+    s.tmp_9.arg1 = s.row___154508;
     s.callLocIdx = 146; s.pc = 12; return s.tmp_9;
   case 12:
     r0 = s.retval;
@@ -12542,9 +12537,9 @@ switch (step) {
     r0 = s.retval;
   case 3:
   case 4:
-    r0 = pxsim.Math_.idiv(s.row___150631, 2);
+    r0 = pxsim.Math_.idiv(s.row___154508, 2);
     s.tmp_1 = r0;
-    r0 = (s.row___150631 / 2);
+    r0 = (s.row___154508 / 2);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 == s.tmp_2);
     s.tmp_0 = r0;
@@ -12552,8 +12547,8 @@ switch (step) {
     if (!r0) { step = 5; continue; }
     s.tmp_3 = tiles_setTileAt__P28509_mk(s);
     s.tmp_4 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_4.arg0 = s.col___150638;
-    s.tmp_4.arg1 = s.row___150631;
+    s.tmp_4.arg0 = s.col___154515;
+    s.tmp_4.arg1 = s.row___154508;
     s.callLocIdx = 149; s.pc = 14; return s.tmp_4;
   case 14:
     r0 = s.retval;
@@ -12564,24 +12559,24 @@ switch (step) {
     r0 = s.retval;
   case 5:
   case 6:
-    r0 = (s.col___150638 + 1);
-    s.col___150638 = (r0);
+    r0 = (s.col___154515 + 1);
+    s.col___154515 = (r0);
     { step = 2; continue; }
   case 7:
-    r0 = (s.row___150631 + 1);
-    s.row___150631 = (r0);
+    r0 = (s.row___154508 + 1);
+    s.row___154508 = (r0);
     { step = 1; continue; }
   case 8:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-divide_maze__P150630.info = {"start":25349,"length":428,"line":234,"column":0,"endLine":245,"endColumn":1,"fileName":"main.ts","functionName":"divide_maze","argumentNames":[]}
+divide_maze__P154507.info = {"start":25349,"length":428,"line":234,"column":0,"endLine":245,"endColumn":1,"fileName":"main.ts","functionName":"divide_maze","argumentNames":[]}
 
-function divide_maze__P150630_mk(s) {
+function divide_maze__P154507_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: divide_maze__P150630, depth: s.depth + 1,
+        parent: s, fn: divide_maze__P154507, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12593,15 +12588,15 @@ function divide_maze__P150630_mk(s) {
   tmp_7: undefined,
   tmp_8: undefined,
   tmp_9: undefined,
-  row___150631: undefined,
-  col___150638: undefined,
+  row___154508: undefined,
+  col___154515: undefined,
 } }
 
 
 
 
 
-function is_even__P150646(s) {
+function is_even__P154523(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12623,12 +12618,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-is_even__P150646.info = {"start":30991,"length":74,"line":382,"column":0,"endLine":384,"endColumn":1,"fileName":"main.ts","functionName":"is_even","argumentNames":["num"]}
+is_even__P154523.info = {"start":30991,"length":74,"line":382,"column":0,"endLine":384,"endColumn":1,"fileName":"main.ts","functionName":"is_even","argumentNames":["num"]}
 
-function is_even__P150646_mk(s) {
+function is_even__P154523_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: is_even__P150646, depth: s.depth + 1,
+        parent: s, fn: is_even__P154523, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12639,7 +12634,7 @@ function is_even__P150646_mk(s) {
 
 
 
-function clear_maze__P150480(s) {
+function clear_maze__P154357(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12649,11 +12644,11 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.row___150481 = undefined;
-    s.col___150486 = undefined;
-    s.row___150481 = (0);
+    s.row___154358 = undefined;
+    s.col___154363 = undefined;
+    s.row___154358 = (0);
   case 1:
-    s.tmp_1 = r0 = s.row___150481;
+    s.tmp_1 = r0 = s.row___154358;
     s.tmp_3 = tiles_tilemapRows__P29899_mk(s);
     s.callLocIdx = 103; s.pc = 5; return s.tmp_3;
   case 5:
@@ -12663,9 +12658,9 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.col___150486 = (0);
+    s.col___154363 = (0);
   case 2:
-    s.tmp_1 = r0 = s.col___150486;
+    s.tmp_1 = r0 = s.col___154363;
     s.tmp_3 = tiles_tilemapColumns__P29898_mk(s);
     s.callLocIdx = 104; s.pc = 6; return s.tmp_3;
   case 6:
@@ -12677,8 +12672,8 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_4 = tiles_setWallAt__P28510_mk(s);
     s.tmp_5 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_5.arg0 = s.col___150486;
-    s.tmp_5.arg1 = s.row___150481;
+    s.tmp_5.arg0 = s.col___154363;
+    s.tmp_5.arg1 = s.row___154358;
     s.callLocIdx = 105; s.pc = 8; return s.tmp_5;
   case 8:
     r0 = s.retval;
@@ -12689,8 +12684,8 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P28509_mk(s);
     s.tmp_1 = tiles_getTileLocation__P28511_mk(s);
-    s.tmp_1.arg0 = s.col___150486;
-    s.tmp_1.arg1 = s.row___150481;
+    s.tmp_1.arg0 = s.col___154363;
+    s.tmp_1.arg1 = s.row___154358;
     s.callLocIdx = 107; s.pc = 10; return s.tmp_1;
   case 10:
     r0 = s.retval;
@@ -12699,24 +12694,24 @@ switch (step) {
     s.callLocIdx = 108; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    r0 = (s.col___150486 + 1);
-    s.col___150486 = (r0);
+    r0 = (s.col___154363 + 1);
+    s.col___154363 = (r0);
     { step = 2; continue; }
   case 3:
-    r0 = (s.row___150481 + 1);
-    s.row___150481 = (r0);
+    r0 = (s.row___154358 + 1);
+    s.row___154358 = (r0);
     { step = 1; continue; }
   case 4:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clear_maze__P150480.info = {"start":23014,"length":311,"line":166,"column":0,"endLine":173,"endColumn":1,"fileName":"main.ts","functionName":"clear_maze","argumentNames":[]}
+clear_maze__P154357.info = {"start":23014,"length":311,"line":166,"column":0,"endLine":173,"endColumn":1,"fileName":"main.ts","functionName":"clear_maze","argumentNames":[]}
 
-function clear_maze__P150480_mk(s) {
+function clear_maze__P154357_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clear_maze__P150480, depth: s.depth + 1,
+        parent: s, fn: clear_maze__P154357, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12724,15 +12719,15 @@ function clear_maze__P150480_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  row___150481: undefined,
-  col___150486: undefined,
+  row___154358: undefined,
+  col___154363: undefined,
 } }
 
 
 
 
 
-function init_maze__P150428(s) {
+function init_maze__P154305(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -12755,8 +12750,8 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_1, globals.transparency8___30043);
     s.tmp_2 = tiles_setSmallTilemap__P29861_mk(s);
     s.tmp_3 = tiles_createTilemap__P28507_mk(s);
-    s.tmp_3.arg0 = _hex150435;
-    r0 = pxsim.image.ofBuffer(_hex150437);
+    s.tmp_3.arg0 = _hex154312;
+    r0 = pxsim.image.ofBuffer(_hex154314);
     s.tmp_3.arg1 = r0;
     s.tmp_3.arg2 = s.tmp_1;
     s.tmp_3.arg3 = 3;
@@ -12778,8 +12773,8 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_1, globals.transparency8___30043);
     s.tmp_2 = tiles_setSmallTilemap__P29861_mk(s);
     s.tmp_3 = tiles_createTilemap__P28507_mk(s);
-    s.tmp_3.arg0 = _hex150446;
-    r0 = pxsim.image.ofBuffer(_hex150448);
+    s.tmp_3.arg0 = _hex154323;
+    r0 = pxsim.image.ofBuffer(_hex154325);
     s.tmp_3.arg1 = r0;
     s.tmp_3.arg2 = s.tmp_1;
     s.tmp_3.arg3 = 3;
@@ -12797,8 +12792,8 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, globals.transparency8___30043);
     s.tmp_1 = tiles_setSmallTilemap__P29861_mk(s);
     s.tmp_2 = tiles_createTilemap__P28507_mk(s);
-    s.tmp_2.arg0 = _hex150455;
-    r0 = pxsim.image.ofBuffer(_hex150457);
+    s.tmp_2.arg0 = _hex154332;
+    r0 = pxsim.image.ofBuffer(_hex154334);
     s.tmp_2.arg1 = r0;
     s.tmp_2.arg2 = s.tmp_0;
     s.tmp_2.arg3 = 3;
@@ -12815,12 +12810,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-init_maze__P150428.info = {"start":1279,"length":21479,"line":38,"column":0,"endLine":156,"endColumn":1,"fileName":"main.ts","functionName":"init_maze","argumentNames":["difficulty"]}
+init_maze__P154305.info = {"start":1279,"length":21479,"line":38,"column":0,"endLine":156,"endColumn":1,"fileName":"main.ts","functionName":"init_maze","argumentNames":["difficulty"]}
 
-function init_maze__P150428_mk(s) {
+function init_maze__P154305_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: init_maze__P150428, depth: s.depth + 1,
+        parent: s, fn: init_maze__P154305, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -12829,12 +12824,12 @@ function init_maze__P150428_mk(s) {
   arg0: undefined,
 } }
 
-const _hex150435 = pxsim.BufferMethods.createBufferFromHex("15000f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex150437 = pxsim.BufferMethods.createBufferFromHex("870415000f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex150446 = pxsim.BufferMethods.createBufferFromHex("29001f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex150448 = pxsim.BufferMethods.createBufferFromHex("870429001f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex150455 = pxsim.BufferMethods.createBufferFromHex("51003d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex150457 = pxsim.BufferMethods.createBufferFromHex("870451003d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154312 = pxsim.BufferMethods.createBufferFromHex("15000f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154314 = pxsim.BufferMethods.createBufferFromHex("870415000f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154323 = pxsim.BufferMethods.createBufferFromHex("29001f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154325 = pxsim.BufferMethods.createBufferFromHex("870429001f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154332 = pxsim.BufferMethods.createBufferFromHex("51003d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex154334 = pxsim.BufferMethods.createBufferFromHex("870451003d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 
 
 
@@ -13729,7 +13724,7 @@ function game_runtime__P28715_mk(s) {
 
 
 
-function fade_in__P150580(s) {
+function fade_in__P154457(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -13763,12 +13758,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-fade_in__P150580.info = {"start":24446,"length":173,"line":206,"column":0,"endLine":211,"endColumn":1,"fileName":"main.ts","functionName":"fade_in","argumentNames":["delay","block"]}
+fade_in__P154457.info = {"start":24446,"length":173,"line":206,"column":0,"endLine":211,"endColumn":1,"fileName":"main.ts","functionName":"fade_in","argumentNames":["delay","block"]}
 
-function fade_in__P150580_mk(s) {
+function fade_in__P154457_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: fade_in__P150580, depth: s.depth + 1,
+        parent: s, fn: fade_in__P154457, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -28824,7 +28819,7 @@ function control_EventContext_constructor__P26555_mk(s) {
 
 
 
-function get_difficulty_name_from_number__P150820(s) {
+function get_difficulty_name_from_number__P154697(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -28838,7 +28833,7 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.user_difficulty___150824 == 1);
+    r0 = (globals.user_difficulty___154701 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
@@ -28846,7 +28841,7 @@ switch (step) {
     { step = 5; continue; }
     { step = 4; continue; }
   case 1:
-    r0 = (globals.user_difficulty___150824 == 2);
+    r0 = (globals.user_difficulty___154701 == 2);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 2; continue; }
@@ -28863,12 +28858,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-get_difficulty_name_from_number__P150820.info = {"start":28455,"length":223,"line":317,"column":0,"endLine":325,"endColumn":1,"fileName":"main.ts","functionName":"get_difficulty_name_from_number","argumentNames":["difficulty"]}
+get_difficulty_name_from_number__P154697.info = {"start":28455,"length":223,"line":317,"column":0,"endLine":325,"endColumn":1,"fileName":"main.ts","functionName":"get_difficulty_name_from_number","argumentNames":["difficulty"]}
 
-function get_difficulty_name_from_number__P150820_mk(s) {
+function get_difficulty_name_from_number__P154697_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: get_difficulty_name_from_number__P150820, depth: s.depth + 1,
+        parent: s, fn: get_difficulty_name_from_number__P154697, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -32590,7 +32585,7 @@ function blockMenu_selectedMenuIndex__P29822_mk(s) {
 
 
 
-function wait_for_menu_select__P150589(s) {
+function wait_for_menu_select__P154466(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -32604,9 +32599,9 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    globals.selected_menu___150592 = (false);
+    globals.selected_menu___154469 = (false);
   case 1:
-    r0 = pxsim_numops_toBoolDecr(globals.selected_menu___150592);
+    r0 = pxsim_numops_toBoolDecr(globals.selected_menu___154469);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -32653,12 +32648,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-wait_for_menu_select__P150589.info = {"start":24620,"length":314,"line":212,"column":0,"endLine":222,"endColumn":1,"fileName":"main.ts","functionName":"wait_for_menu_select","argumentNames":["disable_selecting_0"]}
+wait_for_menu_select__P154466.info = {"start":24620,"length":314,"line":212,"column":0,"endLine":222,"endColumn":1,"fileName":"main.ts","functionName":"wait_for_menu_select","argumentNames":["disable_selecting_0"]}
 
-function wait_for_menu_select__P150589_mk(s) {
+function wait_for_menu_select__P154466_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: wait_for_menu_select__P150589, depth: s.depth + 1,
+        parent: s, fn: wait_for_menu_select__P154466, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -32978,7 +32973,7 @@ function blockMenu_setControlsEnabled__P29827_mk(s) {
 
 
 
-function fade_out__P150504(s) {
+function fade_out__P154381(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -33012,12 +33007,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-fade_out__P150504.info = {"start":23326,"length":174,"line":174,"column":0,"endLine":179,"endColumn":1,"fileName":"main.ts","functionName":"fade_out","argumentNames":["delay","block"]}
+fade_out__P154381.info = {"start":23326,"length":174,"line":174,"column":0,"endLine":179,"endColumn":1,"fileName":"main.ts","functionName":"fade_out","argumentNames":["delay","block"]}
 
-function fade_out__P150504_mk(s) {
+function fade_out__P154381_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: fade_out__P150504, depth: s.depth + 1,
+        parent: s, fn: fade_out__P154381, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -64032,7 +64027,7 @@ const effects_SceneAnchor__C30844_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["sprite_player___150366","tile8___30047","won___150470","loading___150832","length___150835","loading_numerator___150731","loading_denominator___150688","message1___150885","message2___150764","debug___150899","user_difficulty___150824","minimap2___150904","sprite_cursor___150668","selected_menu___150592","_break___151045","start_load___151043","tile5___30044","current_col___150378","current_row___150387","target_tile___150390","tile7___30046","total_unvisited_tiles___150681","tile6___30045","start_step_time___150703","eta___150749","mins___150945","secs___150951","mins_str___150962","secs_str___150977","transparency8___30043"])
+const breakpoints = setupDebugger(1, ["sprite_player___154243","tile8___30047","won___154347","loading___154709","length___154712","loading_numerator___154608","loading_denominator___154565","message1___154762","message2___154641","debug___154776","user_difficulty___154701","minimap2___154781","sprite_cursor___154545","selected_menu___154469","_break___154922","start_load___154920","tile5___30044","current_col___154255","current_row___154264","target_tile___154267","tile7___30046","total_unvisited_tiles___154558","tile6___30045","start_step_time___154580","eta___154626","mins___154822","secs___154828","mins_str___154839","secs_str___154854","transparency8___30043"])
 
-return _main___P151398
+return _main___P155484
 })

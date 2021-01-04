@@ -253,7 +253,7 @@ function make_maze (start_col: number, start_row: number) {
     // https://en.wikipedia.org/wiki/Maze_generation_algorithm#Aldous-Broder_algorithm
     while (tiles.getTilesByType(myTiles.tile7).length > 0) {
         start_step_time = game.runtime()
-        if (Math.percentChance(5)) {
+        if (Math.percentChance(1)) {
             new_spot()
             target_tile = myTiles.tile6
             while (!(make_random_path(false))) {
@@ -386,7 +386,7 @@ debug = false
 // 1: Easy
 // 2: Medium
 // 3: Hard
-user_difficulty = 1
+user_difficulty = 3
 won = false
 loading = false
 message1 = ""

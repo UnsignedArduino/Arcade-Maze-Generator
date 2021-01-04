@@ -210,6 +210,17 @@ function fade_in (delay: number, block: boolean) {
         color.pauseUntilFadeDone()
     }
 }
+function wait_for_menu_select (disable_selecting_0: boolean) {
+    selected_menu = false
+    while (!(selected_menu)) {
+        if (disable_selecting_0 && blockMenu.selectedMenuIndex() == 0) {
+            blockMenu.setSelectedIndex(1)
+            pause(20)
+        } else {
+            pause(100)
+        }
+    }
+}
 function path_up (clear_wall: boolean) {
     current_row += -2
     if (tiles.tileIs(tiles.getTileLocation(current_col, current_row), target_tile)) {
@@ -304,6 +315,15 @@ controller.B.onEvent(ControllerButtonEvent.Released, function () {
 function rows_in_tilemap (row: number) {
     return row >= 0 && row < tiles.tilemapRows()
 }
+function get_difficulty_name_from_number (difficulty: number) {
+    if (user_difficulty == 1) {
+        return "Easy"
+    } else if (user_difficulty == 2) {
+        return "Medium"
+    } else {
+        return "Hard"
+    }
+}
 spriteutils.createRenderable(100, function (screen2) {
     if (loading) {
         length = Math.round(Math.map(Math.constrain(loading_numerator / loading_denominator, 0, 1), 0, 1, 0, scene.screenWidth() * 0.6 - 4))
@@ -357,6 +377,9 @@ function new_spot () {
     current_col = tiles.locationXY(tiles.getTilesByType(myTiles.tile7)[0], tiles.XY.column)
     current_row = tiles.locationXY(tiles.getTilesByType(myTiles.tile7)[0], tiles.XY.row)
 }
+blockMenu.onMenuOptionSelected(function (option, index) {
+    selected_menu = true
+})
 function is_even (num: number) {
     return Math.idiv(num, 2) == num / 2
 }
@@ -370,6 +393,7 @@ let eta = 0
 let start_step_time = 0
 let total_unvisited_tiles = 0
 let sprite_cursor: Sprite = null
+let selected_menu = false
 let target_tile: Image = null
 let current_row = 0
 let current_col = 0
@@ -386,7 +410,7 @@ debug = false
 // 1: Easy
 // 2: Medium
 // 3: Hard
-user_difficulty = 3
+user_difficulty = 1
 won = false
 loading = false
 message1 = ""
@@ -520,8 +544,38 @@ scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     `)
-fade_out(2000, true)
+fade_out(2000, false)
+blockMenu.setControlsEnabled(false)
+timer.after(2000, function () {
+    blockMenu.setControlsEnabled(true)
+})
+while (!(_break)) {
+    blockMenu.setColors(1, 15)
+    blockMenu.showMenu(["Start", "Set difficulty"], MenuStyle.List, MenuLocation.BottomHalf)
+    wait_for_menu_select(false)
+    if (blockMenu.selectedMenuIndex() == 0) {
+        game.showLongText("Current settings:\\n" + "Difficulty: " + get_difficulty_name_from_number(user_difficulty), DialogLayout.Bottom)
+        if (game.ask("Continue with these", "settings?")) {
+            _break = true
+        }
+    } else if (blockMenu.selectedMenuIndex() == 1) {
+        blockMenu.closeMenu()
+        blockMenu.showMenu(["Select a difficulty:", "Easy", "Medium", "Hard"], MenuStyle.List, MenuLocation.BottomHalf)
+        wait_for_menu_select(true)
+        if (blockMenu.selectedMenuIndex() == 0) {
+            game.showLongText("Please select a valid difficulty! (Difficulty has not been modified)", DialogLayout.Bottom)
+        } else {
+            // 1: Easy
+            // 2: Medium
+            // 3: Hard
+            user_difficulty = blockMenu.selectedMenuIndex()
+            game.showLongText("Difficulty is now " + get_difficulty_name_from_number(user_difficulty) + "!", DialogLayout.Bottom)
+        }
+        blockMenu.closeMenu()
+    }
+}
 fade_in(2000, true)
+blockMenu.closeMenu()
 scene.setBackgroundImage(img`
     ................................................................................................................................................................
     ................................................................................................................................................................
@@ -682,6 +736,7 @@ pause(500)
 loading = false
 pause(500)
 fade_out(2000, false)
+_break = false
 while (!(_break)) {
     if (controller.up.isPressed() || controller.down.isPressed() || (controller.left.isPressed() || controller.right.isPressed())) {
         _break = true

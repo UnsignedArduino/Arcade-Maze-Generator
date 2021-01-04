@@ -10,7 +10,8 @@
         "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#v0.0.11",
         "small-tilemaps": "github:riknoll/small-tilemaps#v0.0.1",
         "arcade-text": "github:pelikhan/arcade-image-text#v0.0.4",
-        "Color Fading": "github:jwunderl/pxt-color#v0.2.0"
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.0",
+        "block-menu": "github:riknoll/arcade-custom-menu#v0.0.1"
     },
     "files": [
         "main.blocks",

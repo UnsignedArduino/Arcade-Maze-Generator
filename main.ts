@@ -190,14 +190,14 @@ info.onCountdownEnd(function () {
     })
 })
 function make_random_path (clear_wall: boolean) {
-    if (Math.percentChance(50)) {
-        if ((Math.percentChance(50) || !(rows_in_tilemap(current_row + 2))) && rows_in_tilemap(current_row - 2)) {
+    if (rng.randomBoolean()) {
+        if ((rng.randomBoolean() || !(rows_in_tilemap(current_row + 2))) && rows_in_tilemap(current_row - 2)) {
             return path_up(clear_wall)
         } else {
             return path_down(clear_wall)
         }
     } else {
-        if ((Math.percentChance(50) || !(col_in_tilemap(current_col + 2))) && col_in_tilemap(current_col - 2)) {
+        if ((rng.randomBoolean() || !(col_in_tilemap(current_col + 2))) && col_in_tilemap(current_col - 2)) {
             return path_left(clear_wall)
         } else {
             return path_right(clear_wall)
@@ -264,7 +264,7 @@ function make_maze (start_col: number, start_row: number) {
     // https://en.wikipedia.org/wiki/Maze_generation_algorithm#Aldous-Broder_algorithm
     while (tiles.getTilesByType(myTiles.tile7).length > 0) {
         start_step_time = game.runtime()
-        if (Math.percentChance(1)) {
+        if (rng.percentChance(1)) {
             new_spot()
             target_tile = myTiles.tile6
             while (!(make_random_path(false))) {
@@ -398,6 +398,7 @@ let target_tile: Image = null
 let current_row = 0
 let current_col = 0
 let sprite_player: Sprite = null
+let rng: FastRandomBlocks = null
 let loading_denominator = 0
 let loading_numerator = 0
 let message2 = ""
@@ -411,6 +412,7 @@ debug = false
 // 2: Medium
 // 3: Hard
 user_difficulty = 1
+let user_rng_seed = randint(0, 9999999999)
 won = false
 loading = false
 message1 = ""
@@ -551,10 +553,10 @@ timer.after(2000, function () {
 })
 while (!(_break)) {
     blockMenu.setColors(1, 15)
-    blockMenu.showMenu(["Start", "Set difficulty"], MenuStyle.List, MenuLocation.BottomHalf)
+    blockMenu.showMenu(["Start", "Set difficulty", "Set maze seed"], MenuStyle.List, MenuLocation.BottomHalf)
     wait_for_menu_select(false)
     if (blockMenu.selectedMenuIndex() == 0) {
-        game.showLongText("Current settings:\\n" + "Difficulty: " + get_difficulty_name_from_number(user_difficulty), DialogLayout.Bottom)
+        game.showLongText("Current settings:\\n" + "Difficulty: " + get_difficulty_name_from_number(user_difficulty) + "\\nSeed: " + user_rng_seed, DialogLayout.Bottom)
         if (game.ask("Continue with these", "settings?")) {
             _break = true
         }
@@ -572,6 +574,14 @@ while (!(_break)) {
             game.showLongText("Difficulty is now " + get_difficulty_name_from_number(user_difficulty) + "!", DialogLayout.Bottom)
         }
         blockMenu.closeMenu()
+    } else if (blockMenu.selectedMenuIndex() == 2) {
+        user_rng_seed = game.askForNumber("Please input a seed:", 10)
+        if (user_rng_seed != user_rng_seed) {
+            user_rng_seed = randint(0, 9999999999)
+            game.showLongText("That is now a valid number! (Seed is now " + user_rng_seed + "!)", DialogLayout.Bottom)
+        } else {
+            game.showLongText("Seed is now " + user_rng_seed + "!", DialogLayout.Bottom)
+        }
     }
 }
 fade_in(2000, true)
@@ -700,6 +710,7 @@ scene.setBackgroundImage(img`
     `)
 loading = true
 start_load = game.runtime()
+rng = Random.createRNG(user_rng_seed)
 message1 = "Creating maze..."
 fade_out(2000, true)
 loading_denominator = 5
